@@ -1,0 +1,1620 @@
+\documentclass[dvipdfmx, xcolor=svgnames]{beamer}
+%\documentclass[xcolor=svgnames]{beamer}
+
+\usetheme{Madrid}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
+\setbeamertemplate{footline}[section]
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{txfonts}
+\usepackage{tabularx}
+\usepackage{color}
+%\mathversion{bold}
+\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\kanjifamilydefault}{\gtdefault}
+\setbeamerfont{title}{size=\large,series=\bfseries}
+\setbeamerfont{frametitle}{size=\large,series=\bfseries}
+%\setbeamerfont{framesubtitle}{size=\small,series=\bfseries}
+\setbeamercolor{title}{fg=white, bg=Navy}
+\setbeamertemplate{frametitle}[default][left]
+\setbeamercolor{frametitle}{fg=white, bg=Navy}
+%\setbeamercolor{framesubtitle}{fg=white, bg=black} %%%%%%%%%% 反映されないよ
+\usefonttheme{professionalfonts}
+
+\usepackage[deluxe]{otf}
+\usepackage[noalphabet]{pxchfon}
+\setboldgothicfont{HaranoAjiGothic-Medium.otf}
+
+\theoremstyle{plain}
+%\setbeamertemplate{theorems}
+%\newtheorem{main}{Main Result}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{lemm}{Lemma}[section]
+\theoremstyle{definition}
+\newtheorem*{defi}{Definition}
+%\newtheorem{fact}{Fact}[section]
+\newtheorem{question}{Question}
+\newtheorem{exam}{Example}[section]
+\newtheorem{assumption}{Assumption}[section]
+%\numberwithin{equation}{section}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+
+
+\usepackage{amsmath,amssymb,amsthm,amscd,ascmac,mathrsfs,bm,type1cm,multirow,array,enumerate,mathrsfs,tabularx}
+\usepackage{wrapfig,float}
+% \usepackage{graphicx}
+\usepackage{color}
+\usepackage{arydshln} % 行列 c:c 
+% \usepackage[dvipdfmx]{graphicx}
+
+\renewcommand{\arraystretch}{1.1}
+
+\newcounter{main} % カウンタの宣言
+\setcounter{main}{0} % カウンタの初期化
+\resetcounteronoverlays{main}
+\newcommand{\useMain}[1][]{\refstepcounter{main}{#1}Main Result \,{\themain}}
+
+
+\newcounter{Prop} % カウンタの宣言
+\setcounter{Prop}{0} % カウンタの初期化
+\resetcounteronoverlays{Prop}
+\newcommand{\useProp}[1][]{\refstepcounter{Prop}{#1}Proposition \,{\theProp}}
+
+
+
+\def\rnum#1{\expandafter{\romannumeral #1}} 
+\def\Rnum#1{\uppercase\expandafter{\romannumeral #1}} 
+\def\hsymb#1{\mbox{\strut\rlap{\smash{\Huge$#1$}}\quad}} % 行列の省略記号*
+
+\newcommand{\BigFig}[1]{\parbox{12pt}{\Huge #1}}
+\newcommand{\BigZero}{\BigFig{0}} 
+
+
+\setcounter{tocdepth}{1}
+
+
+\title{研究内容の紹介（20分）}
+\author{東京理科大学理学研究科 \quad
+        小林 穂乃香}
+%\institute{小池研究室}
+\date{山口大学面接\, 於\\
+      2022年9月5日}
+
+\begin{document}
+%%%%% page 1 (title page) %%%%%
+\frame{\titlepage}
+
+
+
+
+\section{擬リーマン多様体とは}
+
+\frame{
+\frametitle{\insertsection}
+\hspace{10pt}$g$\hspace{10pt} : \(M\)上の対称$(0,2)$テンソル場\\
+\hspace{5pt}$X,\, Y\, \in TM$ \vspace{10pt}\\
+\underline{$(M, g)$ : リーマン多様体}\vspace{-5pt}
+\begin{table}
+\begin{tabular}{lll}
+\hspace{-3pt}  
+$g$ : $M$上のリーマン計量 
+\hspace{10pt}
+&
+\uncover<1->{\hspace{4pt} i. e.}
+&
+\uncover<1->{$g(X,X)\geq0$ {\it \, for all $X$, and}}
+\\
+ \hspace{50pt}\(\cdots \)正定値
+&
+&
+\uncover<1->{$g(X,X)=0 \Leftrightarrow X=0$}
+\end{tabular}
+\vspace{6pt}
+\end{table}
+\uncover<2->{
+\underline{$(M, g)$ : 擬リーマン多様体}\vspace{-5pt}
+\begin{table}
+  \hspace{20pt}
+\begin{tabular}{lll}
+  \hspace{-24pt}
+$g$ : $M$上の擬リーマン計量 
+&
+\uncover<2->{\hspace{8pt}i. e. }
+&
+\uncover<2->{
+  \hspace{-9pt}
+$g(X,Y)=0$\, {\it for all}\, $Y\in TM$ 
+}
+\\
+\uncover<2->{\hspace{28pt}\(\cdots \) 非退化}
+&
+&
+\uncover<2->{\hspace{30pt} $\Rightarrow X=0$}
+\end{tabular}
+\end{table}
+
+\uncover<3->{
+  \begin{defi}{}
+    \begin{table}
+    \begin{center}
+    \begin{tabular}{lllcl}
+    $X$ : \textcolor{red}{{\it spacelike}} & 
+    $\overset{\mathrm{def}}{\Leftrightarrow}$ &
+    $\langle X, X\rangle >0$ &
+    or &
+    $X=0$
+    \\
+    $X$ : \textcolor{red}{{\it timelike}} & 
+    $\overset{\mathrm{def}}{\Leftrightarrow}$ & 
+    $\langle X, X\rangle <0$ & 
+    \\
+    $X$ : \textcolor{red}{{\it null}} & 
+    $\overset{\mathrm{def}}{\Leftrightarrow}$ &
+    $\langle X, X\rangle =0$ &
+    and &
+    $X\neq 0$
+    \end{tabular}
+    \end{center}
+    \vspace{-4pt}
+    \end{table}
+    \end{defi}
+}
+}}
+
+
+
+
+
+
+\frame{
+  \frametitle{\insertsection}
+${\bf x}=(x_1,\ldots ,x_{m+1})$, \, ${\bf y}=(y_1,\ldots,y_{m+1})$ \, $\in \mathbb{E}^{m+1}_{\textcolor<2->{red}{s}}$
+\hspace{5pt} 
+\uncover<2->{
+  \begin{minipage}{0.3\textwidth}
+    {\small 
+    \(
+      \left\{
+    \begin{array}{ll}
+    s=0 \, \text{: リーマン多様体}\\
+    s=1 \, \text{: ローレンツ多様体}
+    \end{array}
+      \right.
+    \)
+    }
+  \end{minipage}
+}
+\vspace{5pt}
+
+\hspace{20pt}
+\(\langle {\bf x},{\bf y}\rangle :=\textcolor<2->{red}{-}\sum_{i=1}^{\textcolor<2->{red}{s}}x_iy_i +\sum_{j=\textcolor<2->{red}{s+1}}^{m+1}x_jy_j\)
+\hspace{20pt}
+\uncover<2->{\textcolor{red}{$s$ : 指数}}
+\vspace{0pt}
+\begin{table}
+\hspace{0pt}
+\begin{tabular}{rcl}
+\hspace{-15pt}
+\begin{minipage}[l]{0.4\textwidth}
+\uncover<3->{\textcolor{black}{\underline{リーマン多様体}}}
+\hspace{-3pt}
+\vspace{5pt}
+\end{minipage}
+&
+\hspace{-3pt}
+&
+\hspace{-20pt}
+\begin{minipage}[l]{0.4\textwidth}
+%\textcolor{black}{
+\uncover<3->{\underline{擬リーマン多様体}}
+%}
+\vspace{5pt}
+\end{minipage}
+\\
+\hspace{-15pt}
+\begin{minipage}[l]{0.4\textwidth}
+\shortstack{
+%\textcolor{black}{$\mathbb{S}^2_1$ : pseudo-sphere in $\mathbb{R}^3_1$}
+\uncover<3->{${\small \mathbb{S}^2:=\{ {\bf x}\in\mathbb{E}^3\,} {\large \vert} {\small \, \langle {\bf x},{\bf x}\rangle =1 \} }$}\\
+\hspace{5pt}\uncover<4->{\textcolor<5->{red}{${\small \mathbb{H}^2:=\{ {\bf x}\in\mathbb{E}^3_1\,} {\large \vert} {\small \, \langle {\bf x},{\bf x}\rangle =-1 \} }$}}
+}
+\end{minipage}
+\vspace{7pt}
+&
+&
+\hspace{-20pt}
+\begin{minipage}[l]{0.4\textwidth}
+\shortstack{
+%\textcolor{black}{$\mathbb{S}^2_1$ : pseudo-sphere in $\mathbb{R}^3_1$}
+\uncover<3->{\textcolor<5->{red}{${\small \mathbb{S}^2_1:=\{ {\bf x}\in\mathbb{E}^3_1\,} {\large \vert} {\small \, \langle {\bf x},{\bf x}\rangle =1 \} }$}}\\
+\hspace{5pt}\uncover<4->{${\small \mathbb{H}^2_1:=\{ {\bf x}\in\mathbb{E}^3_2\,} {\large \vert} {\small \, \langle {\bf x},{\bf x}\rangle =-1 \} }$}
+}
+\end{minipage}
+\\
+\begin{minipage}[c]{0.4\textwidth}
+\hspace{10pt}
+\uncover<3->{
+\scalebox{0.5}{\input{pic_sphere.tex}}
+}
+\end{minipage}
+&
+\begin{minipage}[c]{0.15\textwidth}
+\hspace{-12pt}
+\uncover<5->{\textcolor{red}{$\mathbb{S}^n_s$と$\mathbb{H}^n_{n-s}$は反等長}}
+\hspace{-3pt}
+\end{minipage}
+&
+\begin{minipage}[c]{0.4\textwidth}
+\hspace{-12pt}
+\uncover<3->{
+\scalebox{0.4}{\input{pic_pseudo-sphere-8}}
+}
+\end{minipage}
+\end{tabular}
+\end{table}
+}
+
+
+
+
+
+\frame{
+\frametitle{\insertsection}
+  \begin{table}
+   \hspace{-10pt}
+    \begin{tabular}{cl}
+      1905 & {\bf 特殊相対性理論}（A. Einstein）\\
+           & この世界を, 空間\(3\)次元と時間\(1\)次元の"時空"として考える\\
+           & 正定値とは限らない計量を持つ多様体を導入\\
+           & \\
+      1908 & {\bf ミンコフスキー幾何学}（H. Minkowski）\\
+           & 特殊相対性理論を幾何学として再構成\\
+           & 時空は\(4\)次元の空間として記述される \\
+           & \\
+      1915-1916& {\bf 一般相対性理論}（A. Einstein）\\
+           & 重力を時空の曲がりとして捉える, リーマン幾何学を応用        
+    \end{tabular}
+  \end{table}
+  \begin{center}
+    \raisebox{-3mm}[0mm]{\includegraphics[width=15pt, height=20pt, scale=0.2]{yazirusitate.png}} 
+    \vspace{7pt}
+
+    {\bf 擬リーマン幾何学}
+    \end{center}
+}
+
+
+
+% \begin{frame}{\insertsection}
+% \underline{例2．} \quad 重力場における光の軌跡
+% \vspace{-5pt}
+% \begin{center}
+% \scalebox{0.25}{\includegraphics{logoRikadai.png}}   
+% \end{center}
+
+% {\bf \underline{aの位置にある天体が，b地点から見える（重力レンズ効果）}}
+
+% \begin{itemize}
+%       \item 光は常に“真っ直ぐ”進む
+%       \item 光の粒子の軌跡はnull測地線
+% \end{itemize}
+% \end{frame}
+
+
+
+%   \begin{frame}[noframenumbering]{\insertsection}
+%     \underline{例2．} \quad 重力場における光の軌跡
+%     \vspace{-5pt}
+%     \begin{center}
+%     \scalebox{0.13}{\includegraphics{logoRikadai3.jpg}}     
+%     \end{center}
+    
+%     {\bf \underline{aの位置にある天体が，b地点から見える（重力レンズ効果）}}
+    
+%     \begin{itemize}
+%           \item 光は常に“真っ直ぐ”進む
+%           \item 光の粒子の軌跡はnull測地線
+%     \end{itemize}
+%     \end{frame}
+
+
+\section{これまでの研究の概要}
+
+
+\frame{
+  \frametitle{\insertsection}
+$(\, \tilde{M}, \langle \,,\rangle \,)$ : 擬球面 $\mathbb{S}^m_s$ \,または\, 擬双曲空間
+$\mathbb{H}^m_s$　\vspace{5pt} 
+\\
+$(\, M, \langle \,, \rangle \,)$ : $\tilde{M}$の擬リーマン曲面,
+\\
+\hspace{45pt}
+% \uncover<2->{
+\textcolor{red}{形作用素が対角化不可能, 平均曲率とスカラー曲率が一定}
+  % }
+\vspace{3pt} 
+\\
+\hspace{15pt} $\gamma$ \hspace{16pt} : $\tilde{M}$のnull曲線 \quad 
+i.e. \(\langle \dot{\gamma}, \dot{\gamma}\rangle=0\)\, かつ\, \(\dot{\gamma} \neq 0\)
+\vspace{20pt}
+\\
+\uncover<2->{
+{\large \underline{\, Part 1\, \(\cdots \) 擬双曲的ガウス写像による分類}}\vspace{2pt}
+\begin{itemize}
+\item \textcolor<3->{red}{B-scroll}またはcomplex circleの擬双曲的ガウス写像
+%\item 平行曲面の擬双曲的ガウス写像
+% \item B-scrollの一般次元版であるgeneralized umbilical hypersurfaceの\\擬双曲的ガウス写像　 
+\vspace{10pt}
+\end{itemize}
+}
+\uncover<3->{
+{\large \underline{\, Part 2 \, \(\cdots \) generalizations of \textcolor{red}{B-scroll} in \(\tilde{M}^{m}_s\)}}\vspace{2pt}
+\begin{itemize}
+\item generalized umbilical hypersurface in \(\tilde{M}^{n+1}_1\) \, \uncover<4->{\textcolor{red}{\(\cdots\) 次元一般化}}
+\item generalized umbilical hypersurface in \(\tilde{M}^{n+1}_2\) \, \uncover<4->{\textcolor{red}{\(\cdots\) 指数及び次元一般化}}
+\item generalized B-scroll\, in \, \(\mathbb{S}^5_2\)\, or \, \(\mathbb{H}^5_2\) \, \uncover<4->{\textcolor{red}{\(\cdots\) 指数及び余次元一般化}}
+\end{itemize}
+}
+}
+
+
+
+
+\section{Part 1-1 \quad 擬双曲的ガウス写像による分類}
+
+
+
+
+% \frame{
+%   \begin{center}
+%     {\Large {\bf Part \Rnum{1}}}
+%   \end{center}
+% \begin{beamercolorbox}[
+%   %wd=60mm, sep=2pt,
+%   %shadow=true, 
+%   rounded=true
+%   ]{frametitle}
+%   \begin{center}
+%     {\Large 擬双曲的ガウス写像による分類}
+%   \end{center}
+%   \end{beamercolorbox}
+% }
+
+
+
+\subsection{研究背景}
+
+
+\frame{
+\frametitle{\insertsection \quad \quad{\normalsize $\cdots$ \insertsubsection}}
+\underline{部分多様体の平均曲率\(H\)と部分多様体のtype numberの関係}
+\begin{table}
+  \hspace{-10pt}
+   \begin{tabular}{cl}
+     1970年代 & ・\(\Delta H=\lambda H\)となるリーマン部分多様体のtype number\\
+          & ・null \(2\)-typeかつ \(H\) : const\, なローレンツ曲面の完全分類\\
+          & \\
+     1980年代 & ・部分多様体のガウス写像のtype number\\
+          & \\
+     2007年 & ・球面にはめ込まれた部分多様体の球面的ガウス写像   
+   \end{tabular}
+   \vspace{10pt}
+ \end{table}
+ \pause
+ \({\bf x} : M \hookrightarrow \mathbb{S}^m\) : 等長はめ込み
+ \vspace{3pt}
+
+ \hspace{3pt}\((e_1^p, \ldots, e_n^p)\)\hspace{3pt} : \(M\)の向きと適合する\(T_pM\)の正規直交フレーム
+ \begin{table}
+  \begin{tabular}{lll}
+    ガウス写像\(\nu\)
+  & \(\overset{\mathrm{def}}{\Leftrightarrow}\)
+  & \(\nu(p) := e_1^p \wedge \cdots \wedge e_n^p\)\\
+  球面的ガウス写像\(\tilde{\nu}\)
+  & \(\overset{\mathrm{def}}{\Leftrightarrow}\)
+  & \(\tilde{\nu}(p) := \textcolor{red}{{\bf x}(p)} \wedge e_1^p \wedge \cdots \wedge e_n^p \)
+  \end{tabular}
+  \end{table}
+}
+
+
+
+% \frame{
+%   \frametitle{\insertsection \quad \quad{\normalsize $\cdots$ \insertsubsection}}
+%   \underline{擬双曲的ガウス写像}
+% \begin{center}
+% \scalebox{0.8}{\input{pic_pseudo-hyperbolicGaussmap_Mensetsu.tex}}
+% \end{center}
+% }
+
+
+\subsection{in \(\mathbb{S}^3_1\) or \(\mathbb{H}^3_1\)}
+
+\frame{
+  \frametitle{\insertsection \quad \quad{\normalsize $\cdots$ \insertsubsection}}
+%\begin{center}
+\vspace{-5pt}
+\hspace{0pt}
+%\begin{minipage}[c]{0.9\textwidth}
+%\scalebox{0.9}{
+\begin{thm}[D. S. Kim--Y. H. Kim]
+$M^2_1\subset \mathbb{S}^3_1$ (または$\mathbb{H}^3_1)$ : 向きづけられたローレンツ超曲面
+\begin{center}
+\textcolor<2->{red}{形作用素が対角化不可能 かつ\, $H$,$K$ が一定}\vspace{3pt}\\
+\rotatebox{90}{{\large $\Leftrightarrow$}} \vspace{-2pt}\\
+$M^2_1$はB-scrollまたはcomplex circleどちらかの開部分 \vspace{-0pt}
+\end{center}
+\end{thm}
+%}
+%\end{minipage}
+%\end{center}
+\pause
+\begin{center}
+\raisebox{-2mm}[0mm]{\includegraphics[width=15pt, height=20pt, scale=0.2]{yazirusitate.png}} 
+\vspace{-8pt}
+\end{center}
+\begin{table}
+\scalebox{0.95}{
+\begin{tabular}{|l||l|c|c|c|c|} \hline 
+& \multicolumn{2}{c|}{\raisebox{-1mm}{\shortstack{\rule{0pt}{0.5pt}\\ $M^2_1$\\ \rule{0pt}{0.5pt}}}} & \raisebox{1mm}{$\tilde{\nu}$} & \raisebox{1mm}{$K$} & \raisebox{1mm}{$H$} \vspace{0pt} \\ \hline \hline %\cline{2-6} %\cline{1-6} 
+& \uncover<3->{\raisebox{-0mm}{\shortstack{\rule{0pt}{1pt}\\ \textcolor<3->{red}{(Main Result 1)} \,\, $S^1_{\mathbb{C}}(\kappa)$}}} & \uncover<3->{\raisebox{-0mm}{$\kappa =-1$}} & \uncover<3->{\raisebox{-0mm}{$1$-type}} & \uncover<3->{\raisebox{-0mm}{$0$}} & \uncover<3->{\raisebox{-0mm}{$0$}} \\ \cline{3-6}
+\uncover<3->{in \,$\mathbb{H}^3_1$} & \uncover<3->{\hspace{15pt}complex circle} & \uncover<3->{\raisebox{0mm}{$\kappa \neq -1$}} & \uncover<3->{$\infty$-type} & \uncover<3->{\raisebox{-0mm}{$0$}} & \uncover<3->{\raisebox{-0mm}{$\neq0$}} \\ \cline{2-6}
+& \uncover<3->{\raisebox{-0mm}{\shortstack{\rule{0pt}{1pt}\\ \textcolor<3->{red}{(Main Result 2)} \,\, $\mathcal{B}(k_2)$}}} & \uncover<3->{$k_2=\pm1$} & \uncover<3->{\raisebox{-0mm}{$\infty$-type}} & \uncover<3->{\raisebox{-0mm}{$0$}} & \uncover<3->{\raisebox{-0mm}{$\neq0$}} \\ \cline{3-6}
+& \uncover<3->{\raisebox{-0mm}{\hspace{30pt}B-scroll}} & \uncover<3->{$k_2 \neq \pm1$} & \uncover<3->{null $2$-type} & \uncover<3->{\raisebox{-0mm}{$\neq0$}} & \uncover<3->{\raisebox{-0mm}{$\neq0$}} \\ \cline{1-6} 
+\raisebox{2mm}{in \,$\mathbb{S}^3_1$}\vspace{0pt} & \raisebox{-0mm}{\shortstack{\rule{0pt}{1pt}\\ (B--C--D 2017) \hspace{7pt} $\mathcal{B}(k_2)$\\ \hspace{-8pt}B-scroll}}  & & \raisebox{2.5mm}{null $2$-type}\vspace{-0pt} & \raisebox{2.5mm}{$\neq 0$} & \raisebox{2.5mm}{$\neq0$} \\ \hline
+%& \raisebox{0mm}{\textcolor<7->{red}{B-scroll}} & & & & \\ \hline
+\end{tabular}
+}
+\end{table}
+}
+
+
+
+
+\section{Part 1-2 \quad B-scroll}
+
+\subsection{定義}
+
+\frame{
+  \frametitle{\insertsection \quad \quad{\normalsize $\cdots$ \insertsubsection}}
+
+    \hspace{18pt}\(\gamma\) \hspace{14pt}: \(\mathbb{S}^{3}_1\)または\(\mathbb{H}^{3}_1\)のnull曲線
+
+    \((A, B, C)\) : \(\gamma\)上の\textcolor{red}{Cartan frame field}
+    \begin{center}
+    i.e. \,
+    \(
+    \left\{
+    \begin{array}{l}
+    \langle A,A\rangle = \langle B,B\rangle=0,\quad \langle A,B\rangle=-1, \\
+    \langle A,C\rangle = \langle B,C\rangle=0,\quad \langle C,C\rangle=1,\\
+    \dot{\gamma}(s)=A(s), \\
+    \dot{A}(s)=k_1(s)C(s), \\
+    \dot{C}(s)=\textcolor<3->{red}{k_2(s)} A(s)+k_1(s)B(s),\\
+    \dot{B}(s)=\textcolor<3->{red}{k_2(s)} C(s)+\varepsilon \gamma(s). 
+    \end{array}
+    \right.
+    \)
+    \end{center}
+    \pause
+  \begin{defi}
+    \(M\)を，次のようにパラメータづけされたローレンツ曲面とする:
+    \vspace{-7pt}
+    \begin{table}
+    \begin{tabular}{lll}
+    \({\bf x} : M \hookrightarrow \mathbb{S}^{3}_1 \,\text{or}\, \mathbb{H}^{3}_1\)
+    & \(\overset{\mathrm{def}}{\Leftrightarrow}\)
+    & \({\bf x}(s, t) := \gamma(s)+tB(s)\)
+    \vspace{-7pt}
+    \end{tabular}
+    \end{table}
+    このとき，\vspace{-10pt}
+    \begin{table}
+      \begin{tabular}{lll}
+      \(M\) : \textcolor{red}{{\it \(\gamma\)上のB-scroll}}
+      & \(\overset{\mathrm{def}}{\Leftrightarrow}\)
+      & \textcolor<3->{red}{\(k_2\)} : const
+      \end{tabular}
+      \end{table}
+  \end{defi}
+}
+
+
+
+\frame{
+  \frametitle{\insertsection \quad \quad{\normalsize $\cdots$ \insertsubsection}}
+\hspace{60pt}
+\scalebox{0.7}{\input{pic_B-scroll-10}}
+}
+
+
+
+
+
+
+
+
+\section{Part 2-1 \quad B-scrollの次元一般化}
+
+% \frame{
+%   \begin{center}
+%     {\Large {\bf Part \Rnum{2}}}
+%   \end{center}
+% \begin{beamercolorbox}[
+%   %wd=60mm, sep=2pt,
+%   %shadow=true, 
+%   rounded=true
+%   ]{frametitle}
+%   \begin{center}
+%     {\Large generalizations of B-scroll in \(\tilde{M}^{m}_s\)}
+%   \end{center}
+%   \end{beamercolorbox}
+% }
+
+\subsection{定義}
+
+
+
+
+
+
+
+\frame{
+\frametitle{\insertsection \quad{\normalsize $\cdots$ \insertsubsection}}
+\(\tilde{M}^{n+1}_1 = \mathbb{E}^{n+1}_1\) or \(\mathbb{S}^{n+1}_1\) or \(\mathbb{H}^{n+1}_1\)
+\vspace{3pt}
+
+\(M^n_1\) \hspace{9pt}: \(\tilde{M}^{n+1}_1\)のローレンツ超曲面，isoparametric
+\vspace{3pt}
+
+\hspace{3pt}\(A\) \hspace{14pt}: \(M^n_1\)の形作用素, 対角化不可能
+\vspace{3pt}
+
+\(P(x)\) \hspace{4pt}: \(A\)の最小多項式
+%\vspace{10pt}
+\begin{thm}[M. A. Magid]
+\(A\)の固有値の個数が1 or 2個 かつ \(0\)でない固有値が1つ以下
+\vspace{8pt}
+
+\hspace{100pt}
+\rotatebox{90}{{\Large \(\Leftarrow\)}}
+\vspace{8pt}
+
+\(M^n_1\)は次のいずれか：\vspace{8pt}
+\begin{enumerate}
+  \item \(M^n_1\) : generalized cylinder \uncover<2->{\quad \(\cdots\) ゼロ固有値を持つ}
+  \item \(M^n_1\) : generalized umbilical hypersurface \uncover<2->{\quad \(\cdots\) ゼロ固有値を持たない}
+\end{enumerate}
+\vspace{-0pt}
+\uncover<3->{
+\hspace{60pt}
+  \(
+    \left\{
+  \begin{aligned}
+    & \, \text{degree} \, 2 \textcolor<4->{red}{\quad P(x)=(x-a)^2} \uncover<4->{\quad \textcolor{red}{\leftarrow \text{B-scrollはこの型}}}\\
+    & \, \text{degree} \, 3 \quad P(x)=(x-a)^3
+  \end{aligned}
+    \right.
+  \)
+    }
+\end{thm}
+}
+
+
+\subsection{形作用素}
+
+
+\frame{
+  \frametitle{\insertsection}
+\(\tilde{M}\)が指数\(1\)のとき, 形作用素\(A\)はある基底に関して次の\(4\)つのいずれかの形をとる.
+\[
+  \begin{aligned}
+  &\mbox{(I)}
+  \,\,
+  \begin{pmatrix}
+  a_1 &       & 0 \\
+      &\ddots &   \\
+  0   &       & a_n    
+  \end{pmatrix}
+  ,
+  &&
+  \textcolor{red}{
+  \mbox{(II)}
+  \,\,
+  \begin{pmatrix}
+  a_0 & 0   & & & \\
+  1   & a_0 & & & \hspace{-15pt}  \\
+      &     & a_1 & & \\
+      &  & & \ddots & \\
+      &          & &        & a_{n-2}
+  \end{pmatrix}
+  ,
+  }
+  \\
+  &\mbox{(III)}
+  \,\,
+  \begin{pmatrix}
+  a_0 & 0   & 0   & & & \\
+  0   & a_0 & 1   & & & \\
+  -1  & 0   & a_0 & & & \\
+      &     &     & a_1 & & \\
+      &     &     &     & \ddots & \\
+      &     &     &     &        & a_{n-3}
+  \end{pmatrix}
+  ,
+  &&\mbox{(IV)}
+  \,\,
+  \begin{pmatrix}
+  a_0 & b_0   & & & \\
+  -b_0   & a_0 & & & \hspace{-15pt}  \\
+      &     & a_1 & & \\
+      &  & & \ddots & \\
+      &          & &        & a_{n-2}
+  \end{pmatrix}
+  ,
+  \end{aligned}
+  \]
+  ここで，$b_0\neq0$. 
+
+}
+
+
+
+
+
+
+\section{Part 2-2 \quad B-scrollの次元及び指数一般化}
+
+
+\subsection{形作用素}
+
+
+\frame{
+  \frametitle{\insertsection \quad{\normalsize $\cdots$ \insertsubsection}}
+\underline{\quad$\tilde{M}^m_2$の形作用素\quad} \\
+\vspace{10pt}
+{\footnotesize
+\textcolor{red}{
+$
+\left(
+{\renewcommand\arraystretch{1}
+{\arraycolsep = 1mm
+\begin{array}{cc|ccc}
+\lambda & 0 & & & \\
+ 1 & \lambda &  & \\ \hline
+ & &  \lambda &   & \\
+ & &  & \ddots & \\
+ & &    &   & \lambda 
+\end{array}
+}}
+\right)
+$
+}
+}
+ ,\quad
+{\footnotesize
+$
+\left(
+{\renewcommand\arraystretch{0.5}
+{\arraycolsep = 1mm
+\begin{array}{cc|cc|ccc}
+\lambda & 0 & & & & & \\
+1 & \lambda & & & & & \\ \hline
+ & & \lambda & 0 & & & \\
+ & & 1 & \lambda & & & \\ \hline
+ & &    &   & \lambda & & \\
+ & &    &   &   & \ddots & \\
+ & &    &   &   &        & \lambda
+\end{array}
+}}
+\right)
+$
+}
+ ,\quad
+{\footnotesize
+$
+\left(
+{\renewcommand\arraystretch{0.5}
+{\arraycolsep = 1mm
+\begin{array}{ccc|ccc}
+\lambda &  &  &  & & \\
+ 1&  \lambda &  &  & & \\
+ & 1& \lambda  &  & & \\ \hline
+ &  &  & \lambda &  & \\
+ &  &  &   & \ddots &  \\
+ &  &  &   &   & \lambda  
+\end{array}
+}}
+\right)
+$
+}
+ ,\quad
+\vspace{10pt} \\
+{\footnotesize
+$
+\left(
+{\renewcommand\arraystretch{0.8}
+{\arraycolsep = 1mm
+\begin{array}{ccc|ccc|ccc}
+\lambda &         &         &   &   &   &   &        &   \\
+1       & \lambda &         &   &   &   &   &        &   \\
+        &  1      & \lambda &   &   &   &   &        &   \\ \hline
+        &         &         & \lambda &         &  &   &        &   \\ 
+        &         &         &   1     & \lambda &   &   &        &   \\
+        &         &         &         &   1     & \lambda &   &        &   \\ \hline
+ &   &   &   &   &   & \lambda &        &   \\
+ &   &   &   &   &   &   & \ddots &   \\
+ &   &   &   &   &   &   &        & \lambda \\
+\end{array}
+}}
+\right)
+$ ,\quad
+{\footnotesize
+$
+\left(
+{\renewcommand\arraystretch{0.5}
+{\arraycolsep = 1mm
+\begin{array}{cccc|ccc}
+\lambda & 0 & & & & & \\
+1 & \lambda & & & & & \\
+ & 1 & \lambda & 0 & & & \\
+ & & 1 & \lambda & & & \\ \hline
+ & &    &   & \lambda & & \\
+ & &    &   &   & \ddots & \\
+ & &    &   &   &        & \lambda
+\end{array}
+}}
+\right)
+$
+}
+ ,\quad
+$
+\left(
+{\renewcommand\arraystretch{0.5}
+{\arraycolsep = 1mm
+\begin{array}{ccccc|ccc}
+\lambda&          &           &          &   &   &   &          \\
+1      &  \lambda &           &          &   &          &          &   \\
+       &      1   & \lambda   &          &   &   &   &          \\
+       &          &  1        &  \lambda &   &  &   &          \\
+       &          &           &    1     & \lambda &   &          &   \\ \hline
+       &          &           &          &      & \lambda &        &   \\
+       &          &           &          &   &     & \ddots &   \\
+       &          &           &          &   &   &   &         \lambda  
+\end{array}
+}}
+\right)
+$
+}
+}
+
+
+
+
+
+
+% \frame{
+% \frametitle{\insertsection \quad{\normalsize $\cdots$ \insertsubsection}}
+% \(\tilde{M}^{n+1}_1\) : ローレンツ多様体，\(\mathrm{dim}\tilde{M}=n+1\)
+% \vspace{3pt}
+
+% \(M^n_1\) \hspace{9pt}: \(\tilde{M}^{n+1}_1\)のローレンツ超曲面，\(\mathrm{dim}M=n\)
+% \vspace{3pt}
+
+% \hspace{3pt}\(A\) \hspace{14pt}: \(M^n_1\)の形作用素, 対角化不可能
+% \begin{defi}
+%   \begin{table}
+%     \begin{tabular}{lll}
+%       \(M^n_1\) : \textcolor{red}{{\it generalized umbilical hypersurface}}
+%       & \(\overset{\mathrm{def}}{\Leftrightarrow}\)
+%       & \(A\)が\(0\)でない唯一の\\
+%       &
+%       &実固有値を持つ
+%     \end{tabular}
+%   \end{table}
+% \(A\)の最小多項式が\(P(x)=(x-a)^2\)のとき，\(M^n_1\)を\textcolor{red}{degree \(2\)のgeneralized umbilical hypersurface}という (\(a\in \mathbb{R}\) : const)．
+% \end{defi}
+
+% \pause
+% \begin{alertblock}{Main Result 3 (H. Kobayashi--N. Koike)}
+%       {\it
+%       \(M^n_1\) : degree \(2\)の g. u. h. , \quad \(S\) : \(M^n_1\)のスカラー曲率
+%       \vspace{-3pt}
+%       \begin{table}
+%       \begin{tabular}{lll}
+%        $S=0$ \hspace{12pt} & $\Rightarrow$ &  \hspace{-10pt} $\tilde{\nu}$ : infinite type \\
+%        $S\neq 0$(一定) & $\Rightarrow$& \hspace{-10pt} $\tilde{\nu}$ : null $2$-type
+%       \end{tabular}
+%       \end{table}
+%       \vspace{-10pt}
+%       }
+%       \end{alertblock}
+%}
+
+
+
+
+% \frame{
+%   \frametitle{\insertsection \quad {\normalsize $\cdots$ \insertsubsection}}
+%   \begin{minipage}{0.9\textwidth}
+%     Cartan frame (E. Cartan) : \(\mathbb{E}^3_1\)におけるnull曲線に沿う\\
+%     \hspace{122pt} Frenet型フレーム
+%     \vspace{-5pt}
+%     \begin{flushleft}
+%       \hspace{60pt}
+%       \raisebox{-2mm}[0mm]{\includegraphics[width=15pt, height=20pt, scale=0.2]{yazirusitate.png}} 
+%       \hspace{10pt}
+%       {\footnotesize 一般次元ローレンツ多様体に拡張}
+%       \vspace{-5pt}
+%       \end{flushleft}
+%     general Frenet frame (K. L. Duggal--A. Bejancu)
+%     \vspace{-5pt}
+%     \uncover<2->{
+%     \begin{flushleft}
+%       \hspace{60pt}
+%       \raisebox{-2mm}[0mm]{\includegraphics[width=15pt, height=20pt, scale=0.2]{yazirusitate.png}} 
+%       \hspace{10pt}
+%       {\footnotesize よりシンプルな形に再構成}
+%       \vspace{-5pt}
+%       \end{flushleft}
+%       natural Frenet frame (D. H. Jin)
+%       \vspace{-5pt}
+%       \begin{flushleft}
+%         \hspace{60pt}
+%         \raisebox{-2mm}[0mm]{\includegraphics[width=15pt, height=20pt, scale=0.2]{yazirusitate.png}} 
+%         \hspace{10pt}
+%         {\footnotesize 特殊なパラメータをとることでさらにシンプルに}
+%         \vspace{-5pt}
+%         \end{flushleft}
+%       Cartan frame (A. Ferr\'{a}ndez--A. Gim\'{e}nez--P. Lucas)
+%     }
+%   \end{minipage}
+%   \begin{minipage}{0.09\textwidth}
+%     \uncover<5->{
+%    \raisebox{-48mm}[0mm]{\includegraphics[height=130pt, scale=0.5]{ko-yazirushi.png}} 
+%     }
+%   \end{minipage}
+%   \vspace{-2pt}
+%   \uncover<3->{
+%   \begin{itemize}
+%     \item これらは構成の際にscreen vercor bundleなどの概念が必要
+%   \vspace{7pt}
+%   \end{itemize}
+%   }
+%   \uncover<4->{
+%   \underline{一方，H. Kobayashi--N. Koikeによる構成方法は}
+%   \begin{itemize}
+%     \item general Frenet frameを経由せず構成
+%     \item 高度な概念必要なし
+%     \item \(\gamma\)のパラメータに条件なし
+%   \end{itemize}
+%   }
+% }
+
+
+
+
+
+
+
+
+
+
+% \frame{
+%   \frametitle{\insertsection \quad{\normalsize $\cdots$ \insertsubsection}}
+%   \underline{\(\tilde{M}^n_1\)の形作用素} \vspace{5pt}
+
+% \(\tilde{M}\)が指数\(1\)のとき, \(A_N\)はある基底に関して次の\(4\)つのいずれかの形を
+
+% とる( $b_0\neq0$ ).
+% \vspace{-5pt}
+% \[
+%   \begin{aligned}
+%   &\mbox{(I)}
+%   \,\,
+%   \begin{pmatrix}
+%   a_1 &       & 0 \\
+%       &\ddots &   \\
+%   0   &       & a_n    
+%   \end{pmatrix}
+%   ,
+%   &&
+%   \textcolor{red}{
+%   \mbox{(II)}
+%   \,\,
+%   \begin{pmatrix}
+%   a_0 & 0   & & & \\
+%   1   & a_0 & & & \hspace{-15pt}  \\
+%       &     & a_1 & & \\
+%       &  & & \ddots & \\
+%       &          & &        & a_{n-2}
+%   \end{pmatrix}
+%   ,}
+%   \\
+%   &\mbox{(III)}
+%   \,\,
+%   \begin{pmatrix}
+%   a_0 & 0   & 0   & & & \\
+%   0   & a_0 & 1   & & & \\
+%   -1  & 0   & a_0 & & & \\
+%       &     &     & a_1 & & \\
+%       &     &     &     & \ddots & \\
+%       &     &     &     &        & a_{n-3}
+%   \end{pmatrix}
+%   ,
+%   &&\mbox{(IV)}
+%   \,\,
+%   \begin{pmatrix}
+%   a_0 & b_0   & & & \\
+%   -b_0   & a_0 & & & \hspace{-15pt}  \\
+%       &     & a_1 & & \\
+%       &  & & \ddots & \\
+%       &          & &        & a_{n-2}
+%   \end{pmatrix}
+%   ,
+%   \end{aligned}
+%   \]
+% }
+
+
+
+
+
+
+
+
+\subsection{Frenet型フレーム場}
+
+
+
+
+\frame{
+  \frametitle{\insertsection \quad{\normalsize $\cdots$ \insertsubsection}}
+Cartan frame (E. Cartan) : \(\mathbb{E}^3_1\)におけるnull曲線に沿う\\
+\hspace{122pt} Frenet型フレーム
+\vspace{-3pt}
+\begin{flushleft}
+  \hspace{60pt}
+  \raisebox{-2mm}[0mm]{\includegraphics[width=15pt, height=18pt, scale=0.2]{yazirusitate.png}} 
+  \hspace{10pt}
+  {\small 一般次元ローレンツ多様体\(M^n_1\)に拡張}
+  \vspace{-2pt}
+  \end{flushleft}
+general Frenet frame (K. L. Duggal--A. Bejancu)
+\vspace{-3pt}
+\begin{flushleft}
+  \hspace{60pt}
+  \raisebox{-2mm}[0mm]{\includegraphics[width=15pt, height=18pt, scale=0.2]{yazirusitate.png}} 
+  \hspace{10pt}
+  {\small よりシンプルな形に再構成}
+  \vspace{-2pt}
+  \end{flushleft}
+  natural Frenet frame (D. H. Jin)
+  \pause
+  \vspace{-3pt}
+  \begin{flushleft}
+    \hspace{60pt}
+    \raisebox{-2mm}[0mm]{\includegraphics[width=15pt, height=18pt, scale=0.2]{yazirusitate.png}} 
+    \hspace{10pt}
+    {\small 指数\(2\)に拡張}
+    \vspace{-2pt}
+    \end{flushleft}
+  natural Frenet frame with index \(2\) (K. L. Duggal--A. Bejancu--D. H. Jin)
+  \vspace{15pt}
+   \pause
+
+  \underline{別証明}
+  \vspace{-5pt}
+  \[
+    \left\{
+  \begin{aligned}
+    & \nabla_{\dot{\gamma}}A \text{\,: non-null かつ \(^\forall Z_i\) : non-nullのとき，Cartan frame (H. Kobayashi)}\\
+    & \nabla_{\dot{\gamma}}A \text{\,: nullのとき，bi-null Cartan frame (M. Sakaki--A. U\c{c}um--K. \.{I}larslan)}
+  \end{aligned}
+    \right.
+  \]
+  \pause
+  \vspace{-5pt}
+  \begin{alertblock}{Main Result 4 (H. Kobayashi)}
+  degree \(2\) のgeneralized umbilical hypersurface in \(\mathbb{S}^{n+1}_2\) or \(\mathbb{H}^{n+1}_2\) の具体例を構成
+  \end{alertblock}
+}
+
+
+
+
+
+
+
+
+\section{Part 2-3 \quad B-scrollの指数及び余次元一般化}
+
+
+
+\subsection{in \(\mathbb{E}^m_1\)}
+
+\frame{
+  \frametitle{\insertsection \quad \quad{\normalsize $\cdots$ \insertsubsection}}
+\begin{theorem}[D. S. Kim--Y. H. Kim--D. W. Yoon]
+  % \begin{table}
+  % \begin{tabular}{ll}
+  % \begin{minipage}{0.42\textwidth}
+    \vspace{0pt}
+
+\hspace{3pt}\(M\)\hspace{2pt} : \textcolor{red}{\(\mathbb{E}^m_1\)}のnull scroll \vspace{3pt}
+
+\hspace{3pt}\(H\)\hspace{2pt} : \(M\)の平均曲率ベクトル場\vspace{3pt}
+
+\(A_H\) : \(M\)の\(H\)方向の形作用素
+  % \end{minipage}
+  % &
+  % \uncover<3->{
+    
+  % \begin{minipage}{0.49\textwidth}
+  %   \color<3, 6>{red}{
+  %     {\small ※\(M\)は\(2\)次元非退化ローレンツ線織面}
+  %   \begin{screen}
+  %     \vspace{-20pt}
+  %      \[M :\, {\bf x}(s, t)=\gamma(s)+tB(s) \vspace{-10pt}\]
+  %     %  {\small i.e. \(M\)は\(\gamma\)と\(\gamma\)に沿うFrenet型フレーム場から構成される線織面}
+  %      \vspace{-15pt}
+  %   \end{screen}
+
+  %   \hspace{70pt} 
+  %   \rotatebox{90}{\(\Leftrightarrow\)}
+  %   {\rm {\footnotesize \raisebox{1mm}{def}}}
+  %   }
+  % \end{minipage}
+  % }
+  % \end{tabular}
+  % \vspace{-20pt}
+  % \end{table}
+  \pause
+\begin{table}
+  \begin{tabular}{cll}
+    \(A_H\)の最小多項式が\((x-a^2)^2\)
+    & \hspace{3pt}\(\Leftrightarrow\)
+    & \(M\) : \textcolor<3->{red}{generalized B-scroll}\\
+    (\(a\in \mathbb{R}\) : const)
+    &
+    &
+  \end{tabular}
+  % \uncover<4->{
+%   \vspace{-15pt}
+% \end{table}
+% \begin{table}
+%   \begin{tabular}{cll}
+%     \(A_H\)の最小多項式が\((x-\textcolor<5>{red}{k_2^2})^2\)
+%     & \(\Leftarrow\)
+%     & \(M\) : \textcolor<6>{red}{generalized B-scroll}
+%   \end{tabular}
+\end{table}
+  %}
+\vspace{-5pt}
+\end{theorem}
+\pause
+ここで，
+\vspace{3pt}
+
+\((A, B, C, Z_1, \ldots, Z_{m-3})\) : \(\gamma\)に沿うCartan frame field
+\vspace{-3pt}
+\begin{table}
+  \begin{tabular}{cll}
+    \(M\) : \textcolor{red}{generalized B-scroll}
+    & \(\overset{\mathrm{def}}{\Leftrightarrow}\)
+    & \(
+      M \,:\, {\bf x}(s, t)=\gamma(s)+tB(s)  
+      \)
+  \end{tabular}
+\end{table}
+
+\pause
+\underline{Note}\quad
+\(M\)は\(2\)次元非退化ローレンツ曲面
+% \uncover<3->{
+%   \underline{\(\gamma \subset \mathbb{E}^m_1\)に沿うCartan frame field}
+%   \vspace{-5pt}
+% \begin{center}
+% \begin{minipage}{0.7\textwidth}
+%   % \underline{\(\gamma\) in \(\mathbb{E}^m_1\)}
+%   {\small
+%   {\renewcommand\arraystretch{0.3}
+%   {\arraycolsep = 0.5mm
+%   %\hspace{-30pt}
+%   \(
+%   \begin{array}{c}
+%   A \\ B\\ C\\ Z_1\\ \vdots \vspace{2pt}\\ Z_m
+%   \end{array}
+%   \)
+%   }
+%   {\renewcommand\arraystretch{0.6}
+%   {\arraycolsep = 0.8mm
+%   \(
+%   \left(
+%   \begin{array}{ccccc}
+%   0 & -1&   &   &   \\
+%   -1& 0 &   &   &   \\
+%     &   & 1 &   &   \\
+%     &   &   & \ddots &  \\
+%     &   &   &   & 1 
+%   \end{array}
+%   \right)
+%   \)
+%   }}
+%   } 
+%   \, and\quad
+%   %\vspace{-15pt}
+%   \(
+%   \left \{
+%   \begin{array}{l}
+%   \dot{A}=k_1C\\
+%   \dot{C}=\textcolor<5>{red}{k_2}A+k_1B\\
+%   \dot{B}=\textcolor<5>{red}{k_2} C+Z_1 \\
+%   \dot{Z}_1=k_3A+k_4Z_2 \\
+%   \dot{Z}_2=-k_4Z_1+k_5Z_3 \vspace{-3pt}\\
+%     \hspace{15pt}{\footnotesize \vdots}       
+%   \end{array}
+%   \right.
+%   \)
+%   }
+%   \end{minipage}
+% \end{center}
+%}
+}
+
+
+
+
+
+% \frame{
+%   \frametitle{\insertsection \quad \quad{\normalsize $\cdots$ \insertsubsection}}
+% \uncover<1->{
+% {\small $\gamma$ : $\tilde{M}^5_2$のnull曲線, \, $A:=\dot{\gamma}$.} \vspace{0pt} 
+
+% \hspace{-225pt}
+% \scalebox{0.8}{\input{pic_M^5_2Frenet-2_Mensetsu}}
+% }
+
+% \uncover<2->{
+% \begin{table}
+% \begin{tabular}{c|c}
+% \begin{minipage}{0.42\textwidth}
+% %\underline{{\footnotesize {\bf Case 1} or {\bf Case 2} }}
+% \vspace{-3pt}
+% \begin{block}{{\small Type (\rnum{1})\, (H. Kobayashi)}}
+%   \vspace{-5pt}
+% {\footnotesize
+% \begin{eqnarray}\label{joken5}
+% {\renewcommand\arraystretch{0.3}
+% {\arraycolsep = 0.5mm
+% \hspace{-30pt}
+% \begin{array}{l}
+% A \\ B\\ C\\ Z_1\\ Z_2
+% \end{array}
+% \,
+% \left(
+% \begin{array}{ccccc}
+% 0 & -1&   &   &   \\
+% -1& 0 &   &   &   \\
+%   &   & \varepsilon_C &            & \\
+%   &   &            & \varepsilon_1 & \\
+%   &   &            &            & \varepsilon_2
+% \end{array}
+% \right)
+% }}
+% \end{eqnarray}
+% \vspace{-15pt}
+% \begin{eqnarray}\label{joken5-2}
+% \left \{
+% \begin{array}{l}
+% \dot{A}=k_1C\\
+% \dot{C}=k_2A+\varepsilon_C k_1B\\
+% \dot{B}=\varepsilon_C k_2 C+k_3Z_1+\varepsilon \gamma \\
+% \dot{Z}_1=\varepsilon_1 k_3A+k_4Z_2 \\
+% \dot{Z}_2=\varepsilon_C k_4Z_1
+% \end{array}
+% \right.
+% \end{eqnarray}
+% }
+% \vspace{-9pt}
+% \end{block}
+% \end{minipage}
+% }
+% \uncover<3->{
+% &
+% \hspace{3pt}
+% \begin{minipage}{0.42\textwidth}
+% %\underline{{\footnotesize {\bf Case 3} }}
+% \vspace{-3pt}
+% \begin{block}{{\small Type (\rnum{2})\, (H. Kobayashi)}}
+%   \vspace{-5pt}
+% {\footnotesize
+% \begin{eqnarray}\label{joken6}
+% {\renewcommand\arraystretch{0.3}
+% {\arraycolsep = 0.5mm
+% \hspace{-30pt}
+% \begin{array}{l}
+% A \\ B\\ C\\ Z_1\\ Z_2
+% \end{array}
+% \left(
+% \begin{array}{ccccc}
+% 0 & -1&   &   &   \\
+% -1& 0 &   &   &   \\
+%   &   & 1 &   &   \\
+%   &   &   & 0 & -1\\
+%   &   &   & -1& 0 
+% \end{array}
+% \right)
+% }}
+% \end{eqnarray}
+% \vspace{-15pt}
+% \begin{eqnarray}\label{joken6-2}
+% \left \{
+% \begin{array}{l}
+% \dot{A}=k_1C\\
+% \dot{C}=k_2A+k_1B\\
+% \dot{B}=k_2 C+Z_1+\varepsilon \gamma \\
+% \dot{Z}_1=hZ_1 \\
+% \dot{Z}_2=-A-hZ_2
+% \end{array}
+% \right.
+% \end{eqnarray}
+% }
+% \vspace{-9pt}
+% \end{block}
+% \end{minipage}
+% }
+% \end{tabular}
+% \end{table}
+% }
+
+
+
+
+\frame{
+  \frametitle{\insertsection \quad{\normalsize $\cdots$ \insertsubsection}}
+%   \begin{itemize}
+%   \item $s=1$のとき \quad $\gamma$ : $\tilde{M}^n_1$のnull曲線, \, $A:=\dot{\gamma}$. 
+%   \end{itemize}
+% \medskip
+% \hspace{-3pt}
+% \scalebox{0.88}{\input{pic_M^n_1Frenet}}
+% \vspace{28pt}\\
+% \pause
+
+null曲線 \(\gamma \subset \tilde{M}^m_2\)に沿うFrenet型フレーム場
+\vspace{8pt}
+ 
+$A:=\dot{\gamma}$ 
+\medskip
+\pause
+\hspace{-265pt}
+\scalebox{0.9}{\input{pic_M^n_2Frenet-4_Mensetsu}}
+\vspace{5pt}
+\pause
+
+\uncover<3->{\hspace{200pt}{\small 別証明}}
+\vspace{-8pt}
+
+\hspace{30pt}
+\(
+    \left\{
+  \begin{aligned}
+    & \text{\, Type (\rnum {1}) \hspace{-0pt} : Cartan frame field \uncover<3->{\hspace{37pt} {\small \(\cdots\) H. Kobayashi}}}\\
+    & \text{\, Type (\rnum {2}) : bi-null Cartan frame field \uncover<3->{\hspace{7pt} {\small \(\cdots\) M. Sakaki--A. U\c{c}um--K. \.{I}larslan}}}\\
+    & \text{\, Type (\rnum {3}) \uncover<3->{\hspace{128pt} {\small \(\cdots \,m=5\)のとき，H. Kobayashi}}}
+  \end{aligned}
+    \right.
+  \)
+}
+
+
+
+
+
+
+
+
+
+
+
+\subsection{in \(\mathbb{S}^5_2\) or \(\mathbb{H}^5_2\)}
+
+\frame{
+  \frametitle{\insertsection \quad \quad{\normalsize $\cdots$ \insertsubsection}}
+\begin{alertblock}{Main Result 5 (H. Kobayashi)}
+      {\it 
+      % \hspace{30pt}
+      % \(\gamma\) \hspace{29pt}: \textcolor{red}{\(\mathbb{S}^5_2\) or \(\mathbb{H}^5_2\)}のnull曲線
+      % \vspace{3pt}
+
+      % \((A, B, C, Z_1, Z_2)\) : $\gamma$に沿う\( \mathbb{S}^5_2\) or \( \mathbb{H}^5_2\)のCartan frame field \, s.t.\, \(k_2\) : const
+      % \vspace{10pt}
+      % \pause
+
+      % \(M\)が次の条件を満たすとする：\vspace{-5pt}
+      % \[
+      %   (*)\quad
+      %   \left\{
+      % \begin{aligned}
+      %   & M \text{\,: \(\gamma\)と\(\gamma\)に沿うFrenet型フレーム場から構成されるnull scroll}\\
+      %   & M \text{\,: \(2\)次元非退化ローレンツ線織面}
+      % \end{aligned}
+      %   \right.
+      %   \vspace{-10pt}
+      % \]
+      % % \[
+      % % \text{s.t.} \,
+      % % \left\{  
+      % % \begin{array}{l}
+      % % B \text{\,: nullベクトル場,}\\
+      % % \langle A, B \rangle =-1 ,\,\, \langle B, C \rangle =0.
+      % % \end{array}
+      % % \right.
+      % \pause
+      % \begin{center}
+      % \(\Rightarrow\)\, \(M\)は\, \({\bf x}(s, t)=\gamma(s)+tB(s)\)\, によりパラメータづけされる．
+      % \end{center}
+      % \vspace{-0pt}
+      % % \[
+      % %   \Rightarrow \quad
+      % % M: \, {\bf x}(s, t):=\gamma(s)+tB(s)
+      % %   \vspace{-0pt}
+      % % \]
+      % % \hspace{3pt} \(\tilde{H}\) \hspace{5pt}: \(M\)の平均曲率ベクトル場，
+      % % \(H:=\tilde{H}/\Vert \tilde{H}\Vert\)
+      % % \vspace{3pt}
+      % \pause
+
+    % \hspace{43pt}
+    {\small
+    \hspace{6pt}\(M\)\hspace{5pt} : \, \textcolor{red}{\(\mathbb{S}^5_2\) or \(\mathbb{H}^5_2\)}におけるnull scroll \vspace{3pt}
+
+    \hspace{6pt}\(H\)\hspace{5pt} : \, \(M\)の平均曲率ベクトル場\vspace{3pt}
+    
+    \hspace{4pt}\(A_H\)\hspace{2pt} : \, \(M\)の\(H\)方向の形作用素\vspace{3pt}
+
+    \(P(x)\) : \, \(A_H\)の最小多項式\vspace{7pt}
+    }
+    \pause
+
+    \(M\)がgeneralized B-scrollのとき，\(P(x)\)は次のいずれかである：
+    \vspace{-3pt}
+    \begin{center}
+      \begin{minipage}{0.7\textwidth}
+    \begin{enumerate}
+    \item \(Z_1\) : non-null  \hspace{5pt}$\Rightarrow$\hspace{5pt}  \( P(x)=(x-(\textcolor<4->{red}{\varepsilon_C k_2^2+\varepsilon_1 k_3^2}) )^2\) \\
+    \item \(Z_1\) : null  \hspace{26pt}$\Rightarrow$ \hspace{2pt} \( P(x)=(x-\textcolor<4->{red}{k_2^2})^2\)
+    \end{enumerate}
+  \end{minipage}
+    \end{center}
+      %\vspace{-2pt}
+  }
+  \vspace{-3pt}
+\end{alertblock}
+\vspace{-3pt}
+\uncover<3->{
+\begin{table}
+\begin{tabular}{c|c}
+\begin{minipage}{0.42\textwidth}
+%\underline{{\footnotesize {\bf Case 1} or {\bf Case 2} }}
+\vspace{-3pt}
+\begin{block}{{\small Type (\rnum{1})\, (H. Kobayashi)}}
+  \vspace{-8pt}
+{\footnotesize
+% \begin{eqnarray}\label{joken5}
+% {\renewcommand\arraystretch{0.3}
+% {\arraycolsep = 0.5mm
+% \hspace{-30pt}
+% \begin{array}{l}
+% A \\ B\\ C\\ Z_1\\ Z_2
+% \end{array}
+% \,
+% \left(
+% \begin{array}{ccccc}
+% 0 & -1&   &   &   \\
+% -1& 0 &   &   &   \\
+%   &   & \varepsilon_C &            & \\
+%   &   &            & \varepsilon_1 & \\
+%   &   &            &            & \varepsilon_2
+% \end{array}
+% \right)
+% }}
+% \end{eqnarray}
+%\vspace{-15pt}
+\begin{eqnarray}\label{joken5-2}
+\left \{
+\begin{array}{l}
+\dot{A}=k_1C\\
+\dot{C}=\textcolor<4->{red}{k_2}A+\varepsilon_C k_1B\\
+\dot{B}=\textcolor<4->{red}{\varepsilon_C k_2} C+\textcolor<4->{red}{k_3}Z_1+\varepsilon \gamma \\
+\dot{Z}_1=\textcolor<4->{red}{\varepsilon_1 k_3}A+k_4Z_2 \\
+\dot{Z}_2=\varepsilon_C k_4Z_1
+\end{array}
+\right.
+\end{eqnarray}
+}
+\vspace{-9pt}
+\end{block}
+\end{minipage}
+}
+\uncover<3->{
+&
+\hspace{3pt}
+\begin{minipage}{0.42\textwidth}
+%\underline{{\footnotesize {\bf Case 3} }}
+\vspace{-3pt}
+\begin{block}{{\small Type (\rnum{3})\, (H. Kobayashi)}}
+  \vspace{-8pt}
+{\footnotesize
+% \begin{eqnarray}\label{joken6}
+% {\renewcommand\arraystretch{0.3}
+% {\arraycolsep = 0.5mm
+% \hspace{-30pt}
+% \begin{array}{l}
+% A \\ B\\ C\\ Z_1\\ Z_2
+% \end{array}
+% \left(
+% \begin{array}{ccccc}
+% 0 & -1&   &   &   \\
+% -1& 0 &   &   &   \\
+%   &   & 1 &   &   \\
+%   &   &   & 0 & -1\\
+%   &   &   & -1& 0 
+% \end{array}
+% \right)
+% }}
+% \end{eqnarray}
+%\vspace{-15pt}
+\begin{eqnarray}\label{joken6-2}
+\left \{
+\begin{array}{l}
+\dot{A}=k_1C\\
+\dot{C}=\textcolor<4->{red}{k_2}A+k_1B\\
+\dot{B}=\textcolor<4->{red}{k_2} C+Z_1+\varepsilon \gamma \\
+\dot{Z}_1=hZ_1 \\
+\dot{Z}_2=-A-hZ_2
+\end{array}
+\right.
+\end{eqnarray}
+}
+\vspace{-9pt}
+\end{block}
+\end{minipage}
+}
+\end{tabular}
+\end{table}
+}
+
+
+
+
+% \section{今後の課題}
+
+
+% \frame{
+%   \frametitle{\insertsection}
+% \underline{\quad$\tilde{M}^n_2$の形作用素\quad} \\
+% \vspace{10pt}
+% {\footnotesize
+% \textcolor{red}{
+% $
+% \left(
+% {\renewcommand\arraystretch{1}
+% {\arraycolsep = 1mm
+% \begin{array}{cc|ccc}
+% \lambda & 0 & & & \\
+%  1 & \lambda &  & \\ \hline
+%  & &  \lambda &   & \\
+%  & &  & \ddots & \\
+%  & &    &   & \lambda 
+% \end{array}
+% }}
+% \right)
+% $
+% }
+% }
+%  ,\quad
+% {\footnotesize
+% $
+% \left(
+% {\renewcommand\arraystretch{0.5}
+% {\arraycolsep = 1mm
+% \begin{array}{cc|cc|ccc}
+% \lambda & 0 & & & & & \\
+% 1 & \lambda & & & & & \\ \hline
+%  & & \lambda & 0 & & & \\
+%  & & 1 & \lambda & & & \\ \hline
+%  & &    &   & \lambda & & \\
+%  & &    &   &   & \ddots & \\
+%  & &    &   &   &        & \lambda
+% \end{array}
+% }}
+% \right)
+% $
+% }
+%  ,\quad
+% {\footnotesize
+% $
+% \left(
+% {\renewcommand\arraystretch{0.5}
+% {\arraycolsep = 1mm
+% \begin{array}{ccc|ccc}
+% \lambda &  &  &  & & \\
+%  1&  \lambda &  &  & & \\
+%  & 1& \lambda  &  & & \\ \hline
+%  &  &  & \lambda &  & \\
+%  &  &  &   & \ddots &  \\
+%  &  &  &   &   & \lambda  
+% \end{array}
+% }}
+% \right)
+% $
+% }
+%  ,\quad
+% \vspace{10pt} \\
+% {\footnotesize
+% $
+% \left(
+% {\renewcommand\arraystretch{0.8}
+% {\arraycolsep = 1mm
+% \begin{array}{ccc|ccc|ccc}
+% \lambda &         &         &   &   &   &   &        &   \\
+% 1       & \lambda &         &   &   &   &   &        &   \\
+%         &  1      & \lambda &   &   &   &   &        &   \\ \hline
+%         &         &         & \lambda &         &  &   &        &   \\ 
+%         &         &         &   1     & \lambda &   &   &        &   \\
+%         &         &         &         &   1     & \lambda &   &        &   \\ \hline
+%  &   &   &   &   &   & \lambda &        &   \\
+%  &   &   &   &   &   &   & \ddots &   \\
+%  &   &   &   &   &   &   &        & \lambda \\
+% \end{array}
+% }}
+% \right)
+% $ ,\quad
+% {\footnotesize
+% $
+% \left(
+% {\renewcommand\arraystretch{0.5}
+% {\arraycolsep = 1mm
+% \begin{array}{cccc|ccc}
+% \lambda & 0 & & & & & \\
+% 1 & \lambda & & & & & \\
+%  & 1 & \lambda & 0 & & & \\
+%  & & 1 & \lambda & & & \\ \hline
+%  & &    &   & \lambda & & \\
+%  & &    &   &   & \ddots & \\
+%  & &    &   &   &        & \lambda
+% \end{array}
+% }}
+% \right)
+% $
+% }
+%  ,\quad
+% $
+% \left(
+% {\renewcommand\arraystretch{0.5}
+% {\arraycolsep = 1mm
+% \begin{array}{ccccc|ccc}
+% \lambda&          &           &          &   &   &   &          \\
+% 1      &  \lambda &           &          &   &          &          &   \\
+%        &      1   & \lambda   &          &   &   &   &          \\
+%        &          &  1        &  \lambda &   &  &   &          \\
+%        &          &           &    1     & \lambda &   &          &   \\ \hline
+%        &          &           &          &      & \lambda &        &   \\
+%        &          &           &          &   &     & \ddots &   \\
+%        &          &           &          &   &   &   &         \lambda  
+% \end{array}
+% }}
+% \right)
+% $
+% }
+% }
+
+
+\end{document}

@@ -1,0 +1,149 @@
+%WinTpicVersion3.08
+\unitlength 0.1in
+\begin{picture}( 91.0000, 15.8000)(-21.1000,-24.4000)
+% STR 2 0 3 0
+% 3 2050 1190 2050 1290 5 0
+% $\nabla_{\dot{\gamma}}A$
+\put(20.5000,-12.9000){\makebox(0,0){$\nabla_{\dot{\gamma}}A$}}%
+% STR 2 0 3 0
+% 3 4550 990 4550 1090 3 0
+% null $\Rightarrow \nabla_{\dot{\gamma}}\nabla_{\dot{\gamma}}A$ : spacelike
+\put(45.5000,-10.9000){\makebox(0,0)[rb]{null $\Rightarrow \nabla_{\dot{\gamma}}\nabla_{\dot{\gamma}}A$ : spacelike}}%
+% STR 2 0 3 0
+% 3 3040 1440 3040 1540 2 0
+% timelike
+\put(30.4000,-15.4000){\makebox(0,0)[lb]{timelike}}%
+% STR 2 0 3 0
+% 3 3690 1930 3690 2030 2 0
+% ${\footnotesize C:=\frac{1}{k_1}\nabla_{\dot{\gamma}}A}$
+\put(36.9000,-20.3000){\makebox(0,0)[lb]{${\footnotesize C:=\frac{1}{k_1}\nabla_{\dot{\gamma}}A}$}}%
+% STR 2 0 3 0
+% 3 3690 2120 3690 2220 2 0
+% ${\footnotesize \nabla_{\dot{\gamma}}C=k_2A+k_1B}$
+\put(36.9000,-22.2000){\makebox(0,0)[lb]{${\footnotesize \nabla_{\dot{\gamma}}C=k_2A+k_1B}$}}%
+% STR 2 0 3 0
+% 3 3700 2330 3700 2430 2 0
+% ${\footnotesize \nabla_{\dot{\gamma}}B=k_2C+\tilde{Z}_1}$
+\put(37.0000,-24.3000){\makebox(0,0)[lb]{${\footnotesize \nabla_{\dot{\gamma}}B=k_2C+\tilde{Z}_1}$}}%
+% POLYLINE 1 0 3 0
+% 6 2820 1010 2470 1010 2470 1620 2810 1620 2810 1620 2810 1620
+% 
+\special{pn 13}%
+\special{pa 2820 1010}%
+\special{pa 2470 1010}%
+\special{pa 2470 1620}%
+\special{pa 2810 1620}%
+\special{pa 2810 1620}%
+\special{pa 2810 1620}%
+\special{fp}%
+% LINE 1 0 3 0
+% 2 2220 1290 2470 1290
+% 
+\special{pn 13}%
+\special{pa 2220 1290}%
+\special{pa 2470 1290}%
+\special{fp}%
+% POLYLINE 1 0 3 0
+% 6 2980 1470 2810 1470 2810 1970 2975 1970 2975 1970 2975 1970
+% 
+\special{pn 13}%
+\special{pa 2980 1470}%
+\special{pa 2810 1470}%
+\special{pa 2810 1970}%
+\special{pa 2976 1970}%
+\special{pa 2976 1970}%
+\special{pa 2976 1970}%
+\special{fp}%
+% STR 2 0 3 0
+% 3 3020 1940 3020 2040 2 0
+% spacelike
+\put(30.2000,-20.4000){\makebox(0,0)[lb]{spacelike}}%
+% STR 2 0 3 0
+% 3 5510 2300 5510 2400 2 0
+% $\tilde{Z}_1$
+\put(55.1000,-24.0000){\makebox(0,0)[lb]{$\tilde{Z}_1$}}%
+% POLYLINE 1 0 3 0
+% 6 6130 1940 5960 1940 5960 2440 6125 2440 6125 2440 6125 2440
+% 
+\special{pn 13}%
+\special{pa 6130 1940}%
+\special{pa 5960 1940}%
+\special{pa 5960 2440}%
+\special{pa 6126 2440}%
+\special{pa 6126 2440}%
+\special{pa 6126 2440}%
+\special{fp}%
+% LINE 1 0 3 0
+% 2 5710 2330 5960 2330
+% 
+\special{pn 13}%
+\special{pa 5710 2330}%
+\special{pa 5960 2330}%
+\special{fp}%
+% VECTOR 2 0 3 0
+% 2 4890 2330 5390 2330
+% 
+\special{pn 8}%
+\special{pa 4890 2330}%
+\special{pa 5390 2330}%
+\special{fp}%
+\special{sh 1}%
+\special{pa 5390 2330}%
+\special{pa 5324 2310}%
+\special{pa 5338 2330}%
+\special{pa 5324 2350}%
+\special{pa 5390 2330}%
+\special{fp}%
+% STR 2 0 3 0
+% 3 6200 1910 6200 2010 2 0
+% non-null
+\put(62.0000,-20.1000){\makebox(0,0)[lb]{non-null}}%
+% STR 2 0 3 0
+% 3 6210 2380 6210 2480 2 0
+% null
+\put(62.1000,-24.8000){\makebox(0,0)[lb]{null}}%
+% VECTOR 2 0 3 0
+% 2 5350 1010 4750 1010
+% 
+\special{pn 8}%
+\special{pa 5350 1010}%
+\special{pa 4750 1010}%
+\special{fp}%
+\special{sh 1}%
+\special{pa 4750 1010}%
+\special{pa 4818 1030}%
+\special{pa 4804 1010}%
+\special{pa 4818 990}%
+\special{pa 4750 1010}%
+\special{fp}%
+% STR 2 0 3 0
+% 3 5430 1020 5430 1120 2 0
+% [M.Sakaki\,(2012)]\, $\mathbb{E}^n_2$
+\put(54.3000,-11.2000){\makebox(0,0)[lb]{[M.Sakaki\,(2012)]\, $\mathbb{E}^n_2$}}%
+% STR 2 0 3 0
+% 3 5510 1190 5510 1290 2 0
+% "bi-null Cartan curve"
+\put(55.1000,-12.9000){\makebox(0,0)[lb]{"bi-null Cartan curve"}}%
+% BOX 2 0 3 0
+% 2 5350 860 6990 1380
+% 
+\special{pn 8}%
+\special{pa 5350 860}%
+\special{pa 6990 860}%
+\special{pa 6990 1380}%
+\special{pa 5350 1380}%
+\special{pa 5350 860}%
+\special{fp}%
+% STR 2 0 3 0
+% 3 3650 1450 3650 1550 2 0
+% \textcolor<2>{red}{(Proposition 2)}
+\put(36.5000,-15.5000){\makebox(0,0)[lb]{\textcolor<2>{red}{Type (\rnum{1}) \, (H. K)}}}%
+% STR 2 0 3 0
+% 3 6800 1930 6800 2030 2 0
+% \textcolor<2>{red}{(Proposition 2)}
+\put(68.0000,-20.3000){\makebox(0,0)[lb]{\textcolor<2>{red}{Type (\rnum{1}) \, (H. K)}}}%
+% STR 2 0 3 0
+% 3 6570 2400 6570 2500 2 0
+% \textcolor<3>{red}{(Proposition 3)}
+\put(65.7000,-25.0000){\makebox(0,0)[lb]{\textcolor<3>{red}{Type (\rnum{2}) \, (H. K)}}}%
+\end{picture}%

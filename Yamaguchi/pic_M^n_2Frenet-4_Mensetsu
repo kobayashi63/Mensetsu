@@ -1,0 +1,143 @@
+%WinTpicVersion3.08
+\unitlength 0.1in
+\begin{picture}( 91.0000, 17.8000)(-21.1000,-26.4000)
+% STR 2 0 3 0
+% 3 2050 1190 2050 1290 5 0
+% $\nabla_{\dot{\gamma}}A$
+\put(20.5000,-12.9000){\makebox(0,0){$\nabla_{\dot{\gamma}}A$}}%
+% STR 2 0 3 0
+% 3 4550 990 4550 1090 3 0
+% null $\Rightarrow \nabla_{\dot{\gamma}}\nabla_{\dot{\gamma}}A$ : spacelike
+\put(37.5000,-10.9000){\makebox(0,0)[rb]{null \quad \textcolor{red}{Type (\rnum{2})}}}%
+% STR 2 0 3 0
+% 3 3040 1440 3040 1540 2 0
+% timelike
+\put(30.4000,-15.4000){\makebox(0,0)[lb]{timelike \quad \textcolor{red}{Type (\rnum{1})}}}%
+% STR 2 0 3 0
+% 3 3850 1920 3850 2020 2 0
+% $C:=\frac{1}{k_1}\nabla_{\dot{\gamma}}A$
+\put(38.5000,-20.2000){\makebox(0,0)[lb]{$C:=\frac{1}{k_1}\nabla_{\dot{\gamma}}A$}}%
+% STR 2 0 3 0
+% 3 3850 2110 3850 2210 2 0
+% $\nabla_{\dot{\gamma}}C=k_2A+k_1B$
+\put(38.5000,-22.1000){\makebox(0,0)[lb]{$\nabla_{\dot{\gamma}}C=k_2A+k_1B$}}%
+% STR 2 0 3 0
+% 3 3860 2310 3860 2410 2 0
+% $B$ : null s.t. $\langle A,B\rangle =-1$
+\put(38.6000,-24.1000){\makebox(0,0)[lb]{$B$ : null s.t. $\langle A,B\rangle =-1$}}%
+% STR 2 0 3 0
+% 3 3860 2510 3860 2610 2 0
+% $\nabla_{\dot{\gamma}}B=k_2C+\textcolor{red}{\tilde{Z}}$
+\put(38.6000,-26.1000){\makebox(0,0)[lb]{$\nabla_{\dot{\gamma}}B=k_2C+\textcolor{red}{\tilde{Z}_1}$}}%
+% POLYLINE 1 0 3 0
+% 6 2820 1010 2470 1010 2470 1620 2810 1620 2810 1620 2810 1620
+% 
+\special{pn 13}%
+\special{pa 2820 1010}%
+\special{pa 2470 1010}%
+\special{pa 2470 1620}%
+\special{pa 2810 1620}%
+\special{pa 2810 1620}%
+\special{pa 2810 1620}%
+\special{fp}%
+% LINE 1 0 3 0
+% 2 2220 1290 2470 1290
+% 
+\special{pn 13}%
+\special{pa 2220 1290}%
+\special{pa 2470 1290}%
+\special{fp}%
+% POLYLINE 1 0 3 0
+% 6 2980 1470 2810 1470 2810 1970 2975 1970 2975 1970 2975 1970
+% 
+\special{pn 13}%
+\special{pa 2980 1470}%
+\special{pa 2810 1470}%
+\special{pa 2810 1970}%
+\special{pa 2976 1970}%
+\special{pa 2976 1970}%
+\special{pa 2976 1970}%
+\special{fp}%
+% STR 2 0 3 0
+% 3 3020 1940 3020 2040 2 0
+% spacelike
+\put(30.2000,-20.4000){\makebox(0,0)[lb]{spacelike}}%
+% STR 2 0 3 0
+% 3 5740 2470 5740 2570 2 0
+% $\tilde{Z}$
+\put(57.2000,-25.7000){\makebox(0,0)[lb]{$\tilde{Z}_i$}}%
+% POLYLINE 1 0 3 0
+% 6 6280 2140 6110 2140 6110 2640 6275 2640 6275 2640 6275 2640
+% 
+\special{pn 13}%
+\special{pa 6280 2140}%
+\special{pa 6110 2140}%
+\special{pa 6110 2640}%
+\special{pa 6276 2640}%
+\special{pa 6276 2640}%
+\special{pa 6276 2640}%
+\special{fp}%
+% LINE 1 0 3 0
+% 2 5860 2530 6110 2530
+% 
+\special{pn 13}%
+\special{pa 5860 2530}%
+\special{pa 6110 2530}%
+\special{fp}%
+% VECTOR 2 0 3 0
+% 2 5050 2530 5650 2530
+% 
+\special{pn 8}%
+\special{pa 5050 2530}%
+\special{pa 5650 2530}%
+\special{fp}%
+\special{sh 1}%
+\special{pa 5650 2530}%
+\special{pa 5584 2510}%
+\special{pa 5598 2530}%
+\special{pa 5584 2550}%
+\special{pa 5650 2530}%
+\special{fp}%
+% STR 2 0 3 0
+% 3 6360 2080 6360 2180 2 0
+% non-null \quad $\cdots$
+\put(63.6000,-21.8000){\makebox(0,0)[lb]{$^\forall \tilde{Z}_i$ : non-null}}%
+\put(63.6000,-23.8000){\makebox(0,0)[lb]{\quad \textcolor{red}{Type (\rnum{1})}}}%
+% STR 2 0 3 0
+% 3 6340 2590 6340 2690 2 0
+% null \quad $\cdots$
+\put(63.4000,-26.9000){\makebox(0,0)[lb]{$^\exists \tilde{Z}_i$ : null}}%
+\put(63.4000,-28.9000){\makebox(0,0)[lb]{\quad \textcolor{red}{Type (\rnum{3})}}}%
+% VECTOR 2 0 3 0
+% 2 5350 1010 4750 1010
+% 
+\special{pn 8}%
+\special{pa 5350 1010}%
+\special{pa 4750 1010}%
+\special{fp}%
+\special{sh 1}%
+\special{pa 4750 1010}%
+\special{pa 4818 1030}%
+\special{pa 4804 1010}%
+\special{pa 4818 990}%
+\special{pa 4750 1010}%
+\special{fp}%
+% STR 2 0 3 0
+% 3 5430 1020 5430 1120 2 0
+% [M.Sakaki\,(2012)]\, $\mathbb{E}^n_2$
+\put(54.3000,-11.2000){\makebox(0,0)[lb]{[M.Sakaki\,(2012)]\, $\mathbb{E}^n_2$}}%
+% STR 2 0 3 0
+% 3 5510 1190 5510 1290 2 0
+% "bi-null Cartan curve"
+\put(55.1000,-12.9000){\makebox(0,0)[lb]{"bi-null Cartan curve"}}%
+% BOX 2 0 3 0
+% 2 5350 860 6990 1380
+% 
+\special{pn 8}%
+\special{pa 5350 860}%
+\special{pa 6990 860}%
+\special{pa 6990 1380}%
+\special{pa 5350 1380}%
+\special{pa 5350 860}%
+\special{fp}%
+\end{picture}%

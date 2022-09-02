@@ -1,0 +1,46 @@
+%WinTpicVersion3.08
+\unitlength 0.1in
+\begin{picture}( 50.6000,  2.4000)(  4.0000, -4.9000)
+% STR 2 0 3 0
+% 3 400 350 400 450 2 0
+% $\nabla_{\dot{\gamma}} A$ : space like 
+\put(4.0000,-4.5000){\makebox(0,0)[lb]{$\nabla_{\dot{\gamma}} A$ : space like }}%
+% LINE 1 0 3 0
+% 2 2420 370 2630 370
+% 
+\special{pn 13}%
+\special{pa 2420 370}%
+\special{pa 2630 370}%
+\special{fp}%
+% STR 2 0 3 0
+% 3 1580 390 1580 490 2 0
+% $C := \frac{1}{k_1}\nabla_{\dot{\gamma}}A$
+\put(15.8000,-4.9000){\makebox(0,0)[lb]{$C := \frac{1}{k_1}\nabla_{\dot{\gamma}}A$}}%
+% STR 2 0 3 0
+% 3 2700 360 2700 460 2 0
+% $\nabla_{\dot{\gamma}}C = k_2 A +k_1 B$
+\put(27.0000,-4.6000){\makebox(0,0)[lb]{$\nabla_{\dot{\gamma}}C = k_2 A +k_1 B$}}%
+% STR 2 0 3 0
+% 3 2690 550 2690 650 2 0
+% {\small $B$ : null s.t. $\langle A,B \rangle =-1$}
+\put(26.9000,-6.5000){\makebox(0,0)[lb]{{\small $B$ : null s.t. $\langle A,B \rangle =-1$}}}%
+% LINE 1 0 3 0
+% 2 4060 370 4270 370
+% 
+\special{pn 13}%
+\special{pa 4060 370}%
+\special{pa 4270 370}%
+\special{fp}%
+% STR 2 0 3 0
+% 3 4340 360 4340 460 2 0
+% $\nabla_{\dot{\gamma}}B=k_2C+\tilde{Z}$
+\put(43.4000,-4.6000){\makebox(0,0)[lb]{$\nabla_{\dot{\gamma}}B=k_2C+\tilde{Z}$}}%
+% STR 2 0 3 0
+% 3 4440 560 4440 660 2 0
+% $\tilde{Z}$ : spacelike
+\put(44.4000,-6.6000){\makebox(0,0)[lb]{$\tilde{Z}$ : spacelike}}%
+% STR 2 0 3 0
+% 3 5460 320 5460 420 2 0
+% $\cdots$
+\put(54.6000,-4.2000){\makebox(0,0)[lb]{$\cdots$}}%
+\end{picture}%
