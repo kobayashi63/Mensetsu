@@ -129,7 +129,7 @@
 % STR 2 0 3 0
 % 3 5510 1190 5510 1290 2 0
 % "bi-null Cartan curve"
-\put(55.1000,-12.9000){\makebox(0,0)[lb]{"bi-null Cartan curve"}}%
+\put(55.1000,-12.9000){\makebox(0,0)[lb]{"bi-null Cartan frame"}}%
 % BOX 2 0 3 0
 % 2 5350 860 6990 1380
 % 
