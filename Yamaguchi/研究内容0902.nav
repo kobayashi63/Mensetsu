@@ -54,23 +54,25 @@
 \headcommand {\beamer@framepages {29}{29}}
 \headcommand {\beamer@subsectionpages {29}{29}}
 \headcommand {\beamer@subsectionentry {0}{6}{2}{30}{Frenet型フレーム場}}
-\headcommand {\slideentry {6}{2}{1}{30/33}{Frenet型フレーム場}{0}}
-\headcommand {\beamer@framepages {30}{33}}
-\headcommand {\beamer@sectionpages {29}{33}}
-\headcommand {\beamer@subsectionpages {30}{33}}
-\headcommand {\sectionentry {7}{Part 2-3 \hskip 1em\relax B-scrollの指数及び余次元一般化}{34}{Part 2-3 \hskip 1em\relax B-scrollの指数及び余次元一般化}{0}}
-\headcommand {\beamer@subsectionpages {34}{33}}
-\headcommand {\beamer@subsectionentry {0}{7}{1}{34}{in \(\mathbb {E}^m_1\)}}
-\headcommand {\slideentry {7}{1}{1}{34/37}{in \(\mathbb {E}^m_1\)}{0}}
-\headcommand {\beamer@framepages {34}{37}}
-\headcommand {\slideentry {7}{1}{2}{38/40}{in \(\mathbb {E}^m_1\)}{0}}
-\headcommand {\beamer@framepages {38}{40}}
-\headcommand {\beamer@subsectionpages {34}{40}}
-\headcommand {\beamer@subsectionentry {0}{7}{2}{41}{in \(\mathbb {S}^5_2\) or \(\mathbb {H}^5_2\)}}
-\headcommand {\slideentry {7}{2}{1}{41/44}{in \(\mathbb {S}^5_2\) or \(\mathbb {H}^5_2\)}{0}}
-\headcommand {\beamer@framepages {41}{44}}
-\headcommand {\beamer@partpages {1}{44}}
-\headcommand {\beamer@subsectionpages {41}{44}}
-\headcommand {\beamer@sectionpages {34}{44}}
-\headcommand {\beamer@documentpages {44}}
-\headcommand {\gdef \inserttotalframenumber {16}}
+\headcommand {\slideentry {6}{2}{1}{30/32}{Frenet型フレーム場}{0}}
+\headcommand {\beamer@framepages {30}{32}}
+\headcommand {\slideentry {6}{2}{2}{33/36}{Frenet型フレーム場}{0}}
+\headcommand {\beamer@framepages {33}{36}}
+\headcommand {\beamer@sectionpages {29}{36}}
+\headcommand {\beamer@subsectionpages {30}{36}}
+\headcommand {\sectionentry {7}{Part 2-3 \hskip 1em\relax B-scrollの指数及び余次元一般化}{37}{Part 2-3 \hskip 1em\relax B-scrollの指数及び余次元一般化}{0}}
+\headcommand {\beamer@subsectionpages {37}{36}}
+\headcommand {\beamer@subsectionentry {0}{7}{1}{37}{in \(\mathbb {E}^m_1\)}}
+\headcommand {\slideentry {7}{1}{1}{37/40}{in \(\mathbb {E}^m_1\)}{0}}
+\headcommand {\beamer@framepages {37}{40}}
+\headcommand {\slideentry {7}{1}{2}{41/41}{in \(\mathbb {E}^m_1\)}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\beamer@subsectionpages {37}{41}}
+\headcommand {\beamer@subsectionentry {0}{7}{2}{42}{in \(\mathbb {S}^5_2\) or \(\mathbb {H}^5_2\)}}
+\headcommand {\slideentry {7}{2}{1}{42/45}{in \(\mathbb {S}^5_2\) or \(\mathbb {H}^5_2\)}{0}}
+\headcommand {\beamer@framepages {42}{45}}
+\headcommand {\beamer@partpages {1}{45}}
+\headcommand {\beamer@subsectionpages {42}{45}}
+\headcommand {\beamer@sectionpages {37}{45}}
+\headcommand {\beamer@documentpages {45}}
+\headcommand {\gdef \inserttotalframenumber {17}}

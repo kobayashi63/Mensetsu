@@ -109,7 +109,7 @@ $g$ : $M$上のリーマン計量
 &
 \uncover<1->{$g(X,X)\geq0$ {\it \, for all $X$, and}}
 \\
- \hspace{50pt}\(\cdots \)正定値
+ \hspace{48pt}\(\cdots \)正定値
 &
 &
 \uncover<1->{$g(X,X)=0 \Leftrightarrow X=0$}
@@ -392,7 +392,7 @@ i.e. \(\langle \dot{\gamma}, \dot{\gamma}\rangle=0\)\, かつ\, \(\dot{\gamma} \
 
 \frame{
 \frametitle{\insertsection \quad \quad{\normalsize $\cdots$ \insertsubsection}}
-\underline{部分多様体の平均曲率\(H\)と部分多様体のtype numberの関係}
+\underline{部分多様体の平均曲率ベクトル場\(H\)と部分多様体のtype numberの関係}
 \begin{table}
   \hspace{-10pt}
    \begin{tabular}{cl}
@@ -971,6 +971,43 @@ $
 \subsection{Frenet型フレーム場}
 
 
+\frame{
+  \frametitle{\insertsection \quad{\normalsize $\cdots$ \insertsubsection}}
+%   \begin{itemize}
+%   \item $s=1$のとき \quad $\gamma$ : $\tilde{M}^n_1$のnull曲線, \, $A:=\dot{\gamma}$. 
+%   \end{itemize}
+% \medskip
+% \hspace{-3pt}
+% \scalebox{0.88}{\input{pic_M^n_1Frenet}}
+% \vspace{28pt}\\
+% \pause
+
+null曲線 \(\gamma \subset \tilde{M}^m_2\)に沿うFrenet型フレーム場
+\vspace{8pt}
+ 
+$A:=\dot{\gamma}$ 
+\medskip
+\pause
+\hspace{-265pt}
+\scalebox{0.9}{\input{pic_M^n_2Frenet-4_Mensetsu}}
+\vspace{5pt}
+\pause
+
+\uncover<3->{\hspace{200pt}{\small 別証明}}
+\vspace{-8pt}
+
+\hspace{30pt}
+\(
+    \left\{
+  \begin{aligned}
+    & \text{\, Type (\rnum {1}) \hspace{-0pt} : Cartan frame field \uncover<3->{\hspace{37pt} {\small \(\cdots\) H. Kobayashi}}}\\
+    & \text{\, Type (\rnum {2}) : bi-null Cartan frame field \uncover<3->{\hspace{7pt} {\small \(\cdots\) M. Sakaki--A. U\c{c}um--K. \.{I}larslan}}}\\
+    & \text{\, Type (\rnum {3}) \uncover<3->{\hspace{128pt} {\small \(\cdots \,m=5\)のとき，H. Kobayashi}}}
+  \end{aligned}
+    \right.
+  \)
+}
+
 
 
 \frame{
@@ -1292,22 +1329,20 @@ null曲線 \(\gamma \subset \tilde{M}^m_2\)に沿うFrenet型フレーム場
  
 $A:=\dot{\gamma}$ 
 \medskip
-\pause
 \hspace{-265pt}
 \scalebox{0.9}{\input{pic_M^n_2Frenet-4_Mensetsu}}
 \vspace{5pt}
-\pause
 
-\uncover<3->{\hspace{200pt}{\small 別証明}}
+\uncover<1->{\hspace{200pt}{\small 別証明}}
 \vspace{-8pt}
 
 \hspace{30pt}
 \(
     \left\{
   \begin{aligned}
-    & \text{\, Type (\rnum {1}) \hspace{-0pt} : Cartan frame field \uncover<3->{\hspace{37pt} {\small \(\cdots\) H. Kobayashi}}}\\
-    & \text{\, Type (\rnum {2}) : bi-null Cartan frame field \uncover<3->{\hspace{7pt} {\small \(\cdots\) M. Sakaki--A. U\c{c}um--K. \.{I}larslan}}}\\
-    & \text{\, Type (\rnum {3}) \uncover<3->{\hspace{128pt} {\small \(\cdots \,m=5\)のとき，H. Kobayashi}}}
+    & \text{\, Type (\rnum {1}) \hspace{-0pt} : Cartan frame field \uncover<1->{\hspace{37pt} {\small \(\cdots\) H. Kobayashi}}}\\
+    & \text{\, Type (\rnum {2}) : bi-null Cartan frame field \uncover<1->{\hspace{7pt} {\small \(\cdots\) M. Sakaki--A. U\c{c}um--K. \.{I}larslan}}}\\
+    & \text{\, Type (\rnum {3}) \uncover<1->{\hspace{128pt} {\small \(\cdots \,m=5\)のとき，H. Kobayashi}}}
   \end{aligned}
     \right.
   \)
