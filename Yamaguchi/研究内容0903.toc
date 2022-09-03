@@ -1,0 +1,17 @@
+\beamer@sectionintoc {1}{擬リーマン多様体とは}{2}{0}{1}
+\beamer@sectionintoc {2}{本日の発表の流れ}{9}{0}{2}
+\beamer@sectionintoc {3}{Part 1-1 \hskip 1em\relax 擬双曲的ガウス写像による分類}{15}{0}{3}
+\beamer@subsectionintoc {3}{1}{研究背景}{15}{0}{3}
+\beamer@subsectionintoc {3}{2}{in \(\mathbb {S}^3_1\) or \(\mathbb {H}^3_1\)}{18}{0}{3}
+\beamer@sectionintoc {4}{Part 1-2 \hskip 1em\relax B-scroll}{21}{0}{4}
+\beamer@subsectionintoc {4}{1}{定義}{21}{0}{4}
+\beamer@sectionintoc {5}{Part 2-1 \hskip 1em\relax B-scrollの次元一般化}{25}{0}{5}
+\beamer@subsectionintoc {5}{1}{定義}{25}{0}{5}
+\beamer@subsectionintoc {5}{2}{形作用素}{29}{0}{5}
+\beamer@sectionintoc {6}{Part 2-2 \hskip 1em\relax B-scrollの次元及び指数一般化}{30}{0}{6}
+\beamer@subsectionintoc {6}{1}{形作用素}{30}{0}{6}
+\beamer@subsectionintoc {6}{2}{Frenet型フレーム場}{32}{0}{6}
+\beamer@sectionintoc {7}{Part 2-3 \hskip 1em\relax B-scrollの指数及び余次元一般化}{32}{0}{7}
+\beamer@subsectionintoc {7}{1}{in \(\mathbb {E}^m_1\)}{32}{0}{7}
+\beamer@subsectionintoc {7}{2}{in \(\mathbb {S}^5_2\) or \(\mathbb {H}^5_2\)}{35}{0}{7}
+\beamer@subsectionintoc {7}{3}{in \(\mathbb {S}^5_2\) or \(\mathbb {H}^5_2\)}{38}{0}{7}

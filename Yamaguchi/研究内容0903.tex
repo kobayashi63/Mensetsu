@@ -393,34 +393,45 @@ i.e. \(\langle \dot{\gamma}, \dot{\gamma}\rangle=0\)\, かつ\, \(\dot{\gamma} \
 
 \frame{
 \frametitle{\insertsection \quad \quad{\normalsize $\cdots$ \insertsubsection}}
+\({\bf x} : M \hookrightarrow \mathbb{S}^m\) : 等長はめ込み
+\vspace{3pt}
+
+\hspace{3pt}\((e_1^p, \ldots, e_n^p)\)\hspace{3pt} : \(M\)の向きと適合する\(T_pM\)の正規直交フレーム
+\begin{table}
+ \begin{tabular}{lll}
+   ガウス写像\(\nu\)
+ & \(\overset{\mathrm{def}}{\Leftrightarrow}\)
+ & \(\nu(p) := e_1^p \wedge \cdots \wedge e_n^p\)\\
+ 球面的ガウス写像\(\tilde{\nu}\)
+ & \(\overset{\mathrm{def}}{\Leftrightarrow}\)
+ & \(\tilde{\nu}(p) := \textcolor{red}{{\bf x}(p)} \wedge e_1^p \wedge \cdots \wedge e_n^p \)
+ \end{tabular}
+ \end{table}
+ \vspace{10pt}
+ \pause
+
+$\phi: M\rightarrow \mathbb{S}^{m}_s\subset \mathbb{E}^{m+1}_s$ (or $ \mathbb{H}^{m}_{s}\subset \mathbb{E}^{m+1}_{s+1}$) : $C^\infty$級写像\\
+\begin{table}
+\begin{center}
+\begin{tabular}{lll}
+$\phi$ : \(k\)-type & $\overset{\mathrm{def}}{\Leftrightarrow}$ & $\phi=\phi_1+ \phi_2 +\cdots +\phi_k$,\quad $\Delta \phi_i=\lambda_i\phi_i$ \, ($\lambda_i\in \mathbb{R}$)
+\end{tabular}
+\end{center}
+\end{table}
+\vspace{10pt}
+\pause
+
 \underline{部分多様体の平均曲率ベクトル場\(H\)と部分多様体のtype numberの関係}
 \begin{table}
   \hspace{-10pt}
    \begin{tabular}{cl}
      1970年代 & ・\(\Delta H=\lambda H\)となるリーマン部分多様体のtype number\\
-          & ・null \(2\)-typeかつ \(H\) : const\, なローレンツ曲面の完全分類\\
-          & \\
-     1980年代 & ・部分多様体のガウス写像のtype number\\
-          & \\
+          & ・null \(2\)-typeかつ \(H\) : const\, なローレンツ曲面の完全分類\vspace{5pt}\\
+     1980年代 & ・部分多様体のガウス写像のtype number \vspace{5pt}\\
      2007年 & ・球面にはめ込まれた部分多様体の球面的ガウス写像   
    \end{tabular}
    \vspace{10pt}
  \end{table}
- \pause
- \({\bf x} : M \hookrightarrow \mathbb{S}^m\) : 等長はめ込み
- \vspace{3pt}
-
- \hspace{3pt}\((e_1^p, \ldots, e_n^p)\)\hspace{3pt} : \(M\)の向きと適合する\(T_pM\)の正規直交フレーム
- \begin{table}
-  \begin{tabular}{lll}
-    ガウス写像\(\nu\)
-  & \(\overset{\mathrm{def}}{\Leftrightarrow}\)
-  & \(\nu(p) := e_1^p \wedge \cdots \wedge e_n^p\)\\
-  球面的ガウス写像\(\tilde{\nu}\)
-  & \(\overset{\mathrm{def}}{\Leftrightarrow}\)
-  & \(\tilde{\nu}(p) := \textcolor{red}{{\bf x}(p)} \wedge e_1^p \wedge \cdots \wedge e_n^p \)
-  \end{tabular}
-  \end{table}
 }
 
 
@@ -539,10 +550,10 @@ $M^2_1$はB-scrollまたはcomplex circleどちらかの開部分 \vspace{-0pt}
   \end{minipage}
   \hspace{30pt}
 &
-\begin{minipage}{0.62\textwidth}
+\begin{minipage}{0.65\textwidth}
   \underline{Note}
 \begin{itemize}
-\item null曲線\(\gamma\)と\(\gamma\)に沿うCartan frame fieldから構成される線織面
+\item null曲線\(\gamma\)と\(\gamma\)に沿うFrenet型フレーム場から構成される線織面
 \item \(2\)次元非退化ローレンツ曲面
 \item 形作用素は対角化不可能，実固有値
 \end{itemize}
@@ -812,7 +823,7 @@ $
 }
 \pause
 \begin{alertblock}{Main Result 3 (H. Kobayashi)}
-  degree \(2\) のgeneralized umbilical hypersurface in \(\mathbb{S}^{n+1}_2\) or \(\mathbb{H}^{n+1}_2\) の具体例を構成
+  degree \(2\) のgeneralized umbilical hypersurface in \textcolor{red}{\(\mathbb{S}^{n+1}_2\) or \(\mathbb{H}^{n+1}_2\)} の具体例を構成
 \end{alertblock}
 }
 
@@ -1077,12 +1088,15 @@ $
       \)
   \end{tabular}
 \end{table}
-\vspace{10pt}
+\vspace{0pt}
 \pause
 
-\underline{Note}\quad
-\(M\)は\(2\)次元非退化ローレンツ曲面
-\vspace{10pt}
+\underline{Note}
+\begin{itemize}
+\item null曲線\(\gamma\)と\(\gamma\)に沿うFrenet型フレーム場から構成される線織面
+\item \(2\)次元非退化ローレンツ曲面
+\item 形作用素は対角化不可能，実固有値
+\end{itemize}
 \pause
 
 \begin{theorem}[D. S. Kim--Y. H. Kim--D. W. Yoon]
@@ -1300,7 +1314,7 @@ $
 % }
 
 
-
+\subsection{in \(\mathbb{S}^5_2\) or \(\mathbb{H}^5_2\)}
 
 \frame{
   \frametitle{\insertsection \quad{\normalsize $\cdots$ \insertsubsection}}
@@ -1353,6 +1367,8 @@ $A:=\dot{\gamma}$
 
 \frame{
   \frametitle{\insertsection \quad \quad{\normalsize $\cdots$ \insertsubsection}}
+  \vspace{-3pt}
+
 \begin{alertblock}{Main Result 4 (H. Kobayashi)}
       {\it 
       % \hspace{30pt}
@@ -1398,7 +1414,10 @@ $A:=\dot{\gamma}$
       % \pause
 
     % \hspace{43pt}
-    {\small
+    % \begin{table}
+    % \begin{tabular}{ll}
+    %   \begin{minipage}{0.45\textwidth}
+    %{\small
     \hspace{6pt}\(M\)\hspace{5pt} : \, \textcolor{red}{\(\mathbb{S}^5_2\) or \(\mathbb{H}^5_2\)}におけるnull scroll \vspace{3pt}
 
     \hspace{6pt}\(H\)\hspace{5pt} : \, \(M\)の平均曲率ベクトル場\vspace{3pt}
@@ -1406,30 +1425,45 @@ $A:=\dot{\gamma}$
     \hspace{4pt}\(A_H\)\hspace{2pt} : \, \(M\)の\(H\)方向の形作用素\vspace{3pt}
 
     \(P(x)\) : \, \(A_H\)の最小多項式\vspace{7pt}
-    }
-    \pause
+   % }
+  %     \end{minipage}
+  %     &
+  %     \begin{minipage}{0.5\textwidth}
+  %       {\small 
+  %       \begin{itembox}{Note}
+  %     \begin{itemize}
+  %     \item null曲線\(\gamma\)と\(\gamma\)に沿うFrenet型フレーム場から構成される線織面
+  %     \item \(2\)次元非退化ローレンツ曲面
+  %     \item 形作用素は対角化不可能，実固有値
+  %     \end{itemize}
+  %   \end{itembox}
+  %       }
+  %     \end{minipage}
+  %   \end{tabular}
+  % \end{table}
 
     \(M\)がgeneralized B-scrollのとき，\(P(x)\)は次のいずれかである：
+    
     \vspace{-3pt}
     \begin{center}
       \begin{minipage}{0.7\textwidth}
     \begin{enumerate}
-    \item \(Z_1\) : non-null  \hspace{5pt}$\Rightarrow$\hspace{5pt}  \( P(x)=(x-(\textcolor<3->{red}{\varepsilon_C k_2^2+\varepsilon_1 k_3^2}) )^2\) \\
-    \item \(Z_1\) : null  \hspace{26pt}$\Rightarrow$ \hspace{2pt} \( P(x)=(x-\textcolor<3->{red}{k_2^2})^2\)
+    \uncover<2->{\item \(Z_1\) : non-null  \hspace{5pt}$\Rightarrow$\hspace{5pt}  \( P(x)=(x-(\textcolor<4->{red}{\varepsilon_C k_2^2+\varepsilon_1 k_3^2}) )^2\)}  \\
+    \uncover<3->{\item \(Z_1\) : null  \hspace{26pt}$\Rightarrow$ \hspace{2pt} \( P(x)=(x-\textcolor<4->{red}{k_2^2})^2\)}
     \end{enumerate}
   \end{minipage}
     \end{center}
       %\vspace{-2pt}
   }
-  \vspace{-3pt}
+  \vspace{-5pt}
 \end{alertblock}
-\vspace{-3pt}
-\pause
+\vspace{-6pt}
 \begin{table}
 \begin{tabular}{cc}
 \begin{minipage}{0.42\textwidth}
 %\underline{{\footnotesize {\bf Case 1} or {\bf Case 2} }}
 \vspace{-3pt}
+\uncover<2->{
 \begin{block}{{\small Type (\rnum{1})\, \(\cdots Z_1\)がnon-nullのとき}}
   \vspace{-8pt}
 {\footnotesize
@@ -1457,9 +1491,9 @@ $A:=\dot{\gamma}$
 \left \{
 \begin{array}{l}
 \dot{A}=k_1C\\
-\dot{C}=\textcolor<3->{red}{k_2}A+\varepsilon_C k_1B\\
-\dot{B}=\textcolor<3->{red}{\varepsilon_C k_2} C+\textcolor<3->{red}{k_3}Z_1+\varepsilon \gamma \\
-\dot{Z}_1=\textcolor<3->{red}{\varepsilon_1 k_3}A+k_4Z_2 \\
+\dot{C}=\textcolor<4->{red}{k_2}A+\varepsilon_C k_1B\\
+\dot{B}=\textcolor<4->{red}{\varepsilon_C k_2} C+\textcolor<4->{red}{k_3}Z_1+\varepsilon \gamma \\
+\dot{Z}_1=\textcolor<4->{red}{\varepsilon_1 k_3}A+k_4Z_2 \\
 \dot{Z}_2=\varepsilon_C k_4Z_1
 \end{array}
 \right.
@@ -1467,12 +1501,14 @@ $A:=\dot{\gamma}$
 }
 \vspace{-9pt}
 \end{block}
+}
 \end{minipage}
 &
 \hspace{3pt}
 \begin{minipage}{0.42\textwidth}
 %\underline{{\footnotesize {\bf Case 3} }}
 \vspace{-3pt}
+\uncover<3->{
 \begin{block}{{\small Type (\rnum{3})\, \(\cdots Z_1\)がnullのとき}}
   \vspace{-8pt}
 {\footnotesize
@@ -1499,8 +1535,8 @@ $A:=\dot{\gamma}$
 \left \{
 \begin{array}{l}
 \dot{A}=k_1C\\
-\dot{C}=\textcolor<3->{red}{k_2}A+k_1B\\
-\dot{B}=\textcolor<3->{red}{k_2} C+Z_1+\varepsilon \gamma \\
+\dot{C}=\textcolor<4->{red}{k_2}A+k_1B\\
+\dot{B}=\textcolor<4->{red}{k_2} C+Z_1+\varepsilon \gamma \\
 \dot{Z}_1=hZ_1 \\
 \dot{Z}_2=-A-hZ_2
 \end{array}
@@ -1509,6 +1545,7 @@ $A:=\dot{\gamma}$
 }
 \vspace{-9pt}
 \end{block}
+}
 \end{minipage}
 \end{tabular}
 \end{table}

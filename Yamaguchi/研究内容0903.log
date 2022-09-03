@@ -1,9 +1,9 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.euc) (TeX Live 2020) (preloaded format=platex 2021.1.27)  2 SEP 2022 18:36
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.euc) (TeX Live 2020) (preloaded format=platex 2021.1.27)  3 SEP 2022 10:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0902-2.tex
-(/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/�^^a0^^94腥九^^86^^85絎�0902-2.tex
+**/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0903.tex
+(/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/�^^a0^^94腥九^^86^^85絎�0903.tex
 pLaTeX2e <2020-02-02>+3 (based on LaTeX2e <2020-02-02> patch level 5)
 L3 programming layer <2020-03-06> (/usr/local/texlive/2020/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2019/09/29 v3.57 A class for typesetting presentations
@@ -721,8 +721,8 @@ File: l3backend-dvipdfmx.def 2020-03-12 L3 backend support: dvipdfmx
 \l__pdf_internal_box=\box105
 \g__pdf_backend_object_int=\count342
 \g__pdf_backend_annotation_int=\count343
-) (/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0902-2.aux)
-\openout1 = `研究内容0902-2.aux'.
+) (/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0903.aux)
+\openout1 = `研究内容0903.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 88.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 88.
@@ -819,9 +819,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 88.
 LaTeX Info: Redefining \pageref on input line 88.
 LaTeX Info: Redefining \nameref on input line 88.
-(/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0902-2.out) (/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0902-2.out)
+(/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0903.out) (/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0903.out)
 \@outlinefile=\write5
-\openout5 = `研究内容0902-2.out'.
+\openout5 = `研究内容0903.out'.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
@@ -835,7 +835,7 @@ Dictionary: translator-months-dictionary, Language: English
 Dictionary: translator-numbers-dictionary, Language: English 
 ) (/usr/local/texlive/2020/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0902-2.nav)
+) (/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0903.nav)
 LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
 (Font)              scaled to size 5.77332pt on input line 88.
 LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
@@ -1270,47 +1270,53 @@ LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
 ]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 424.
+(Font)              using `JY1/hgt/bx/n' instead on input line 435.
+
+
+Overfull \vbox (10.31691pt too high) detected at line 435
+ []
 
 [15
 
 ]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 424.
+(Font)              using `JY1/hgt/bx/n' instead on input line 435.
+
+
+Overfull \vbox (10.31691pt too high) detected at line 435
+ []
 
 [16
 
 ]
-LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
-(Font)              scaled to size 11.54663pt on input line 475.
-LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
-(Font)              scaled to size 11.54663pt on input line 475.
-LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <12> not available
-(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 475.
-LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
-(Font)              scaled to size 11.39996pt on input line 475.
-File: yazirusitate.png Graphic file (type bmp)
-<yazirusitate.png>
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 475.
+(Font)              using `JY1/hgt/bx/n' instead on input line 435.
 
 
-Overfull \vbox (6.42125pt too high) detected at line 475
+Overfull \vbox (10.31691pt too high) detected at line 435
  []
 
 [17
 
 ]
+LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
+(Font)              scaled to size 11.54663pt on input line 486.
+LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
+(Font)              scaled to size 11.54663pt on input line 486.
+LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <12> not available
+(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 486.
+LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
+(Font)              scaled to size 11.39996pt on input line 486.
 File: yazirusitate.png Graphic file (type bmp)
 <yazirusitate.png>
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 475.
+(Font)              using `JY1/hgt/bx/n' instead on input line 486.
 
 
-Overfull \vbox (6.42125pt too high) detected at line 475
+Overfull \vbox (6.42125pt too high) detected at line 486
  []
 
 [18
@@ -1320,129 +1326,140 @@ File: yazirusitate.png Graphic file (type bmp)
 <yazirusitate.png>
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 475.
+(Font)              using `JY1/hgt/bx/n' instead on input line 486.
 
 
-Overfull \vbox (6.42125pt too high) detected at line 475
+Overfull \vbox (6.42125pt too high) detected at line 486
  []
 
 [19
 
 ]
+File: yazirusitate.png Graphic file (type bmp)
+<yazirusitate.png>
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 528.
+(Font)              using `JY1/hgt/bx/n' instead on input line 486.
+
+
+Overfull \vbox (6.42125pt too high) detected at line 486
+ []
 
 [20
 
 ]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 528.
+(Font)              using `JY1/hgt/bx/n' instead on input line 539.
 
 [21
 
 ]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 528.
+(Font)              using `JY1/hgt/bx/n' instead on input line 539.
 
 [22
 
+]
+
+LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
+(Font)              using `JY1/hgt/bx/n' instead on input line 539.
+
+[23
+
 ] (/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/pic_B-scroll-10)
-Overfull \hbox (38.54692pt too wide) in paragraph at lines 552--552
+Overfull \hbox (38.54692pt too wide) in paragraph at lines 563--563
 [][] 
  []
 
 
-LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 552.
+Overfull \hbox (9.78377pt too wide) in paragraph at lines 563--563
+ [] 
+ []
 
-[23
-
-]
-LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
-(Font)              scaled to size 13.85594pt on input line 625.
-LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
-(Font)              scaled to size 13.85594pt on input line 625.
-LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 625.
-LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
-(Font)              scaled to size 13.67995pt on input line 625.
-LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
-(Font)              scaled to size 7.69775pt on input line 625.
-LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
-(Font)              scaled to size 7.69775pt on input line 625.
-LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <8> not available
-(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 625.
-LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
-(Font)              scaled to size 7.59998pt on input line 625.
-LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
-(Font)              scaled to size 5.77332pt on input line 625.
-LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
-(Font)              scaled to size 5.77332pt on input line 625.
-LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <6> not available
-(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 625.
-LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
-(Font)              scaled to size 5.69998pt on input line 625.
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 625.
+(Font)              using `JY1/hgt/bx/n' instead on input line 563.
+
+
+Overfull \vbox (2.30772pt too high) detected at line 563
+ []
 
 [24
 
 ]
+LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
+(Font)              scaled to size 13.85594pt on input line 636.
+LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
+(Font)              scaled to size 13.85594pt on input line 636.
+LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <14.4> not available
+(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 636.
+LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
+(Font)              scaled to size 13.67995pt on input line 636.
+LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
+(Font)              scaled to size 7.69775pt on input line 636.
+LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
+(Font)              scaled to size 7.69775pt on input line 636.
+LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <8> not available
+(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 636.
+LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
+(Font)              scaled to size 7.59998pt on input line 636.
+LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
+(Font)              scaled to size 5.77332pt on input line 636.
+LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
+(Font)              scaled to size 5.77332pt on input line 636.
+LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <6> not available
+(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 636.
+LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
+(Font)              scaled to size 5.69998pt on input line 636.
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 625.
+(Font)              using `JY1/hgt/bx/n' instead on input line 636.
 
 [25
 
 ]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 625.
+(Font)              using `JY1/hgt/bx/n' instead on input line 636.
 
 [26
 
 ]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 625.
+(Font)              using `JY1/hgt/bx/n' instead on input line 636.
 
 [27
 
 ]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 683.
+(Font)              using `JY1/hgt/bx/n' instead on input line 636.
 
 [28
 
 ]
-LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 817.
-LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 817.
-LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
-(Font)              scaled to size 8.54997pt on input line 817.
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 817.
-
-
-Overfull \vbox (9.2593pt too high) detected at line 817
- []
+(Font)              using `JY1/hgt/bx/n' instead on input line 694.
 
 [29
 
 ]
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 8.65997pt on input line 828.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 8.65997pt on input line 828.
+LaTeX Font Info:    Font shape `OT1/txss/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 828.
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 817.
+(Font)              using `JY1/hgt/bx/n' instead on input line 828.
 
 
-Overfull \vbox (9.2593pt too high) detected at line 817
+Overfull \vbox (9.2593pt too high) detected at line 828
  []
 
 [30
@@ -1450,71 +1467,63 @@ Overfull \vbox (9.2593pt too high) detected at line 817
 ]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 1194.
+(Font)              using `JY1/hgt/bx/n' instead on input line 828.
+
+
+Overfull \vbox (9.2593pt too high) detected at line 828
+ []
 
 [31
 
 ]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 1194.
+(Font)              using `JY1/hgt/bx/n' instead on input line 1208.
 
 [32
 
 ]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 1194.
+(Font)              using `JY1/hgt/bx/n' instead on input line 1208.
 
 [33
 
-] (/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/pic_M^n_2Frenet-4_Mensetsu)
+]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 1340.
+(Font)              using `JY1/hgt/bx/n' instead on input line 1208.
 
 [34
 
 ] (/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/pic_M^n_2Frenet-4_Mensetsu)
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 1340.
+(Font)              using `JY1/hgt/bx/n' instead on input line 1354.
 
 [35
 
 ] (/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/pic_M^n_2Frenet-4_Mensetsu)
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 1340.
+(Font)              using `JY1/hgt/bx/n' instead on input line 1354.
 
 [36
 
-]
-LaTeX Font Info:    Font shape `JT1/hgt/m/it' will be
-(Font)              scaled to size 9.6222pt on input line 1515.
-LaTeX Font Info:    Font shape `JY1/hgt/m/it' will be
-(Font)              scaled to size 9.6222pt on input line 1515.
-LaTeX Font Info:    Font shape `OT1/txss/m/it' in size <10> not available
-(Font)              Font shape `OT1/txss/m/sl' tried instead on input line 1515.
-LaTeX Font Info:    Font shape `OT1/txss/m/sl' will be
-(Font)              scaled to size 9.49997pt on input line 1515.
+] (/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/pic_M^n_2Frenet-4_Mensetsu)
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 1515.
-
-
-Overfull \vbox (12.40068pt too high) detected at line 1515
- []
+(Font)              using `JY1/hgt/bx/n' instead on input line 1354.
 
 [37
 
 ]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 1515.
+(Font)              using `JY1/hgt/bx/n' instead on input line 1552.
 
 
-Overfull \vbox (12.40068pt too high) detected at line 1515
+Overfull \vbox (8.568pt too high) detected at line 1552
  []
 
 [38
@@ -1522,42 +1531,64 @@ Overfull \vbox (12.40068pt too high) detected at line 1515
 ]
 
 LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
-(Font)              using `JY1/hgt/bx/n' instead on input line 1515.
+(Font)              using `JY1/hgt/bx/n' instead on input line 1552.
 
 
-Overfull \vbox (12.40068pt too high) detected at line 1515
+Overfull \vbox (8.568pt too high) detected at line 1552
  []
 
 [39
 
 ]
+
+LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
+(Font)              using `JY1/hgt/bx/n' instead on input line 1552.
+
+
+Overfull \vbox (8.568pt too high) detected at line 1552
+ []
+
+[40
+
+]
+
+LaTeX Font Warning: Font shape `JY1/hgt/b/n' undefined
+(Font)              using `JY1/hgt/bx/n' instead on input line 1552.
+
+
+Overfull \vbox (8.568pt too high) detected at line 1552
+ []
+
+[41
+
+]
 \tf@nav=\write6
-\openout6 = `研究内容0902-2.nav'.
+\openout6 = `研究内容0903.nav'.
 
 \tf@toc=\write7
-\openout7 = `研究内容0902-2.toc'.
+\openout7 = `研究内容0903.toc'.
 
 \tf@snm=\write8
-\openout8 = `研究内容0902-2.snm'.
+\openout8 = `研究内容0903.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1643.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1643.
-(/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0902-2.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1643.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1643.
-Package rerunfilecheck Info: File `研究内容0902-2.out' has not changed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1680.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1680.
+(/Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0903.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1680.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1680.
+Package rerunfilecheck Info: File `研究内容0903.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22750 strings out of 481140
- 417542 string characters out of 5917417
- 776914 words of memory out of 5000000
- 38221 multiletter control sequences out of 15000+600000
- 609184 words of font info for 258 fonts, out of 8000000 for 9000
+ 22748 strings out of 481140
+ 417456 string characters out of 5917417
+ 776980 words of memory out of 5000000
+ 38219 multiletter control sequences out of 15000+600000
+ 608447 words of font info for 257 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 58i,27n,67p,836b,1144s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,27n,67p,834b,1137s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on /Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0902-2.dvi (39 pages, 496480 bytes).
+Output written on /Users/kobayashiminorunokou/Desktop/Mensetsu/Yamaguchi/研究内容0903.dvi (41 pages, 527704 bytes).
