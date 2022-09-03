@@ -1,0 +1,107 @@
+
+%%#!platex -src youshi.tex && dvipdfmx youshi.dvi
+\documentclass[12pt,leqno]{jsarticle}
+\usepackage{amsmath,amssymb,amsthm,latexsym,enumerate,verbatim}
+\usepackage{bm}
+% \usepackage[multi]{otf}
+% \usepackage[margin=32mm]{geometry}
+% \allowdisplaybreaks
+% \numberwithin{equation}{chapter}
+\setlength{\topmargin}{-0.6in}
+% \setlength{\textwidth}{14.3cm}
+% \setlength{\textheight}{26cm}
+% %\setlength{\oddsidemargin}{9mm}
+% \addtolength{\footskip}{-10mm}
+
+\theoremstyle{plain}
+\newtheorem{question}{問題}
+
+\renewcommand{\labelenumi}{{\rm (\arabic{enumi})}}
+
+
+\def\rnum#1{\expandafter{\romannumeral #1}} 
+\def\Rnum#1{\uppercase\expandafter{\romannumeral #1}} 
+% \def\labelenumi{\theenumi}
+% \newcommand{\MB}[1]{\mathbf{#1}}
+% \newcommand{\MC}[1]{\mathcal{#1}}
+% \newcommand{\MF}[1]{\mathfrak{#1}}
+% \newcommand{\MI}[1]{\mathit{#1}}
+% \newcommand{\MRM}[1]{\mathrm{#1}}
+% \def\theenumi{\rm(\roman{enumi})}
+% \def\rnum#1{\expandafter{\romannumeral #1}} 
+
+% \setlength{\oddsidemargin}{-1in}
+% \addtolength{\oddsidemargin}{2.5cm}
+% \setlength{\evensidemargin}{-1in}
+% \addtolength{\evensidemargin}{2.5cm}
+% \setlength{\topmargin}{-1in}
+% \addtolength{\topmargin}{2cm}
+% \setlength{\textwidth}{16cm}
+% \setlength{\textheight}{40\baselineskip}
+
+% \setlength{\headheight}{1cm}
+% \setlength{\headsep}{0.5cm}
+% \makeatletter
+% \def\ps@myheadings{\def\@oddhead{\hbox{}\rm\rightmark \hfil
+% (\quad 枚中 \quad 枚)}
+% \def\@oddfoot{}\def\@evenhead{\hbox{}\rm\rightmark \hfil
+% (\quad 枚中{\thepage}枚)}
+% \def\@evenfoot{}\def\sectionmark##1{}\def\subsectionmark##1{}}
+% \makeatother
+% \def\kintou#1#2{\makebox[#1]{%
+% \kanjiskip=0pt plus 1fill minus 1fill
+% \xkanjiskip=\kanjiskip
+% #2}}
+% \pagestyle{myheadings}
+\pagestyle{empty}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \makeatletter
+%  \def\mojiparline#1{
+%  \newcounter{mpl}
+%  \setcounter{mpl}{#1}
+%  \@tempdima=\linewidth
+%  \advance\@tempdima by-\value{mpl}zw
+%  \addtocounter{mpl}{-1}
+%  \divide\@tempdima by \value{mpl}
+%  \advance\kanjiskip by\@tempdima
+%  \advance\parindent by\@tempdima
+%  }
+%  \makeatother
+%  \def\linesparpage#1{
+%  \baselineskip=\textheight
+%  \divide\baselineskip by #1
+%  }
+
+ 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+
+\begin{document}
+% \hspace{300pt}（\quad 枚中 \quad 枚）
+\begin{center}
+{\Large 20xx年度前期 \, 線型代数学基礎\Rnum{1} \, 第x回レポート課題}
+\vspace{20pt}
+\end{center}
+
+\begin{question}
+  行列式の定義
+  \[
+  \vert A\vert =\sum_{\sigma \in S_n} (\mathrm{sgn}\sigma) a_{1\sigma(1)} a_{2\sigma(2)}\cdots a_{n\sigma(n)}
+  \]
+  を用いて，次の行列式の値を計算せよ．
+  \[
+  \begin{vmatrix}
+    1 & 0 & 1 & 2 \\
+    2 & 1 & 2 & 4 \\
+    3 & 1 & 1 & 2 \\
+    1 & 3 & 2 & 1
+  \end{vmatrix} 
+  \]
+\end{question}
+
+
+\end{document}
